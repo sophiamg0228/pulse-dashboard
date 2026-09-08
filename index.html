@@ -572,7 +572,7 @@ function render() {
         { lbl:`Visualizaciones · ${monthInfo.label} 2026`,    val:fmt(igMonthData.views),            change:'Mensual', type:'live', color:'var(--acc)',    bar:'#0DC5D4' },
         { lbl:`Interacciones · ${monthInfo.label} 2026`,      val:fmt(igMonthData.interactions),     change:'Mensual', type:'live', color:'var(--rose)',   bar:'#FB7185' },
         { lbl:`Cuentas alcanzadas · ${monthInfo.label}`,      val:fmt(igMonthData.accounts_engaged), change:'Mensual', type:'live', color:'var(--purple)', bar:'#A78BFA' },
-        { lbl:`Visitas al perfil · ${monthInfo.label}`,       val:fmt(igMonthData.profile_views),    change:'Mensual', type:'live', color:'var(--ok)',    bar:'#4ADE80' },
+        { lbl:'Seguidores Instagram',                          val:(igMonthData.followers || LIVE?.followers || 0).toLocaleString('es-CO'), change:'Actual', type:'live', color:'var(--ok)', bar:'#4ADE80' },
       ];
     } else if (LIVE) {
       kpis = [
@@ -588,17 +588,17 @@ function render() {
     // Facebook
     if (fbMonthData) {
       kpis = [
-        { lbl:`Impresiones FB · ${monthInfo.label} 2026`, val:fmt(fbMonthData.impressions), change:'Mensual', type:'live', color:'var(--warn)',   bar:'#F59E0B' },
-        { lbl:`Alcance FB · ${monthInfo.label} 2026`,     val:fmt(fbMonthData.reach),       change:'Mensual', type:'live', color:'var(--purple)', bar:'#A78BFA' },
-        { lbl:`Interacciones FB · ${monthInfo.label}`,    val:fmt(fbMonthData.engagements), change:'Mensual', type:'live', color:'var(--rose)',   bar:'#FB7185' },
-        { lbl:'Seguidores FB',                             val:fmt(LIVE?.fb_fans || 29),    change:'Actual',  type:'live', color:'var(--ok)',    bar:'#4ADE80' },
+        { lbl:`Impresiones FB · ${monthInfo.label} 2026`, val:fbMonthData.impressions > 0 ? fmt(fbMonthData.impressions) : '—', change:'Mensual', type:'live', color:'var(--warn)',   bar:'#F59E0B' },
+        { lbl:`Alcance FB · ${monthInfo.label} 2026`,     val:fbMonthData.reach > 0 ? fmt(fbMonthData.reach) : '—',             change:'Mensual', type:'live', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:`Interacciones FB · ${monthInfo.label}`,    val:fbMonthData.engagements > 0 ? fmt(fbMonthData.engagements) : '—', change:'Mensual', type:'live', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:'Seguidores FB',                             val:fmt(LIVE?.fb_fans || 0),                                          change:'Actual',  type:'live', color:'var(--ok)',    bar:'#4ADE80' },
       ];
     } else if (LIVE) {
       kpis = [
-        { lbl:'Impresiones FB · 30 días', val:fmt(LIVE.fb_impressions || 11200), change:'En vivo', type:'live', color:'var(--warn)',   bar:'#F59E0B' },
-        { lbl:'Alcance FB · 30 días',     val:fmt(LIVE.fb_reach       || 5000),  change:'En vivo', type:'live', color:'var(--purple)', bar:'#A78BFA' },
-        { lbl:'Interacciones FB · 30d',   val:fmt(LIVE.fb_engagements || 321),   change:'En vivo', type:'live', color:'var(--rose)',   bar:'#FB7185' },
-        { lbl:'Seguidores FB',             val:fmt(LIVE.fb_fans        || 29),    change:'Actual',  type:'live', color:'var(--ok)',    bar:'#4ADE80' },
+        { lbl:'Impresiones FB · 30 días', val:LIVE.fb_impressions > 0 ? fmt(LIVE.fb_impressions) : '—', change:'En vivo', type:'live', color:'var(--warn)',   bar:'#F59E0B' },
+        { lbl:'Alcance FB · 30 días',     val:LIVE.fb_reach > 0 ? fmt(LIVE.fb_reach) : '—',             change:'En vivo', type:'live', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:'Interacciones FB · 30d',   val:LIVE.fb_engagements > 0 ? fmt(LIVE.fb_engagements) : '—', change:'En vivo', type:'live', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:'Seguidores FB',             val:fmt(LIVE.fb_fans || 0),                                   change:'Actual',  type:'live', color:'var(--ok)',    bar:'#4ADE80' },
       ];
     } else {
       kpis = [
@@ -615,7 +615,7 @@ function render() {
 
   // Mes con datos reales = al menos una métrica > 0
   const igHasData = igMonthData && (igMonthData.views > 0 || igMonthData.interactions > 0);
-  const fbHasData = fbMonthData && (fbMonthData.impressions > 0 || fbMonthData.engagements > 0);
+  const fbHasData = fbMonthData !== undefined;
   const hasMonthData = isIG ? igHasData : fbHasData;
 
   const periodLabel = LIVE
