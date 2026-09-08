@@ -36,25 +36,32 @@ async function fetchIGTotals(since, until, followers) {
   }
 }
 
-// Métricas FB para un período — usa page token
+// Métricas FB para un período — prueba métricas NPE (nuevas páginas) primero
 async function fetchFBTotals(since, until, pageToken) {
-  try {
-    const data = await get(`/${PAGE_ID}/insights`,
-      `&metric=page_impressions,page_post_engagements,page_reach&period=day&since=${since}&until=${until}`,
-      pageToken);
-    const m = {};
-    (data.data || []).forEach(d => {
-      if (d.values) m[d.name] = d.values.reduce((s, v) => s + (v.value || 0), 0);
-    });
-    return {
-      impressions: m.page_impressions || 0,
-      engagements: m.page_post_engagements || 0,
-      reach:       m.page_reach || 0,
-    };
-  } catch (e) {
-    console.warn(`  FB totals ${since}: ${e.message}`);
-    return { impressions: 0, engagements: 0, reach: 0 };
+  // Intento 1: métricas NPE (New Page Experience) — válidas para páginas modernas
+  const NPE_METRICS = 'page_impressions_unique,page_engaged_users,page_views_total';
+  const OLD_METRICS = 'page_impressions,page_post_engagements,page_reach';
+
+  for (const metrics of [NPE_METRICS, OLD_METRICS]) {
+    try {
+      const data = await get(`/${PAGE_ID}/insights`,
+        `&metric=${metrics}&period=day&since=${since}&until=${until}`,
+        pageToken);
+      if (!data.data?.length) continue;
+      const m = {};
+      (data.data || []).forEach(d => {
+        if (d.values) m[d.name] = d.values.reduce((s, v) => s + (v.value || 0), 0);
+      });
+      return {
+        impressions: m.page_impressions || m.page_views_total || 0,
+        engagements: m.page_post_engagements || m.page_engaged_users || 0,
+        reach:       m.page_reach || m.page_impressions_unique || 0,
+      };
+    } catch (e) {
+      console.warn(`  FB totals ${since} (${metrics.split(',')[0]}...): ${e.message}`);
+    }
   }
+  return { impressions: 0, engagements: 0, reach: 0 };
 }
 
 async function main() {
