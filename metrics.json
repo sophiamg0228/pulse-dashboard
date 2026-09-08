@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T20:51:38.362Z",
+  "updated": "2026-09-08T21:13:49.290Z",
   "client": "odontoclave",
   "ig": {
     "username": "odontoclave",
@@ -68,10 +68,10 @@
         "profile_views": 0
       },
       "2026-02": {
-        "views": 14089,
-        "interactions": 37,
-        "accounts_engaged": 9,
-        "profile_views": 658
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
       },
       "2026-03": {
         "views": 0,
@@ -80,10 +80,10 @@
         "profile_views": 0
       },
       "2026-04": {
-        "views": 29153,
-        "interactions": 176,
-        "accounts_engaged": 56,
-        "profile_views": 852
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
       },
       "2026-05": {
         "views": 0,
@@ -92,10 +92,10 @@
         "profile_views": 0
       },
       "2026-06": {
-        "views": 23364,
-        "interactions": 138,
-        "accounts_engaged": 55,
-        "profile_views": 733
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
       },
       "2026-07": {
         "views": 0,
@@ -110,10 +110,10 @@
         "profile_views": 0
       },
       "2026-09": {
-        "views": 5266,
-        "interactions": 35,
-        "accounts_engaged": 18,
-        "profile_views": 158
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
       }
     }
   },
