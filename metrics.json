@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T21:13:49.290Z",
+  "updated": "2026-09-08T21:28:54.599Z",
   "client": "odontoclave",
   "ig": {
     "username": "odontoclave",
@@ -104,16 +104,18 @@
         "profile_views": 0
       },
       "2026-08": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
+        "views": 17599,
+        "interactions": 216,
+        "accounts_engaged": 120,
+        "profile_views": 562,
+        "followers": 6281
       },
       "2026-09": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
+        "views": 5283,
+        "interactions": 35,
+        "accounts_engaged": 18,
+        "profile_views": 159,
+        "followers": 6281
       }
     }
   },
