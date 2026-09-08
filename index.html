@@ -547,10 +547,31 @@ function render() {
     return;
   }
 
-  // Meses disponibles (últimos 90 días + Acumulado)
-  const cutoff = new Date(Date.now() - 90 * 86400000);
-  const cutoffKey = `${cutoff.getFullYear()}-${String(cutoff.getMonth()+1).padStart(2,'0')}`;
-  const availableMonths = MONTHS.filter(m => !m.key || m.key >= cutoffKey);
+  // Meses disponibles: Acumulado + solo meses que tienen datos reales en la API
+  // La API solo retorna datos de los últimos ~30 días, así que mostramos los que existen
+  const igMonthsWithData = new Set(
+    Object.entries(LIVE?.ig?.monthly || {})
+      .filter(([, v]) => v.views > 0 || v.interactions > 0)
+      .map(([k]) => k)
+  );
+  const fbMonthsWithData = new Set(
+    Object.entries(LIVE?.fb?.monthly || {})
+      .filter(([, v]) => v.impressions > 0 || v.engagements > 0)
+      .map(([k]) => k)
+  );
+  const monthsWithAnyData = new Set([...igMonthsWithData, ...fbMonthsWithData]);
+
+  // Mostrar: "Acumulado" siempre + meses con datos (basado en lo que la API devolvió)
+  // Si no hay datos vivos aún, mostrar últimos 3 meses como fallback
+  let availableMonths;
+  if (monthsWithAnyData.size > 0) {
+    availableMonths = MONTHS.filter(m => !m.key || monthsWithAnyData.has(m.key));
+  } else {
+    // Fallback mientras carga: últimos 3 meses
+    const cutoff = new Date(Date.now() - 90 * 86400000);
+    const cutoffKey = `${cutoff.getFullYear()}-${String(cutoff.getMonth()+1).padStart(2,'0')}`;
+    availableMonths = MONTHS.filter(m => !m.key || m.key >= cutoffKey);
+  }
 
   // Si el mes seleccionado ya no está disponible, resetear a 'all'
   if (currentMonth !== 'all' && !availableMonths.find(m => m.id === currentMonth)) {
@@ -635,7 +656,7 @@ function render() {
         <div class="plat-btn${currentPlatform==='fb'?' active':''}" data-plat="fb">📘 FB</div>
       </div>
     </div>
-    <div class="api-notice">📅 La API de Instagram guarda detalles de los últimos 90 días — solo se muestran los meses disponibles</div>
+    <div class="api-notice">📅 La API de Meta entrega métricas detalladas de los últimos ~30 días — solo se muestran los meses con datos reales</div>
 
     ${currentMonth !== 'all' && !hasMonthData ? `
       <div class="month-empty">
