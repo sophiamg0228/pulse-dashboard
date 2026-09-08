@@ -1,0 +1,64 @@
+{
+  "updated": "2026-09-08T19:59:52.981Z",
+  "client": "odontoclave",
+  "ig": {
+    "username": "odontoclave",
+    "followers": 6281,
+    "media_count": 541,
+    "views_30d": 22317,
+    "reach_28d": 3555,
+    "interactions_30d": 248,
+    "accounts_engaged_30d": 128,
+    "profile_views_30d": 704,
+    "top_posts": [
+      {
+        "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
+        "type": "Video",
+        "likes": 53,
+        "comments": 1,
+        "total_interactions": 54,
+        "timestamp": "2026-08-19T18:28:22+0000"
+      },
+      {
+        "caption": "Detrás de cada sonrisa transformada, hay personas que se formaron para cuidarla ",
+        "type": "Imagen",
+        "likes": 20,
+        "comments": 0,
+        "total_interactions": 20,
+        "timestamp": "2026-06-08T15:17:54+0000"
+      },
+      {
+        "caption": "¿Ya conoces nuestra sede fabricato ? 👀 qué esperas para agendar tu cita ! 🤔 en",
+        "type": "Video",
+        "likes": 19,
+        "comments": 0,
+        "total_interactions": 19,
+        "timestamp": "2026-05-23T15:17:15+0000"
+      },
+      {
+        "caption": "¿Cuándo fue la última vez que visitaste al odontólogo? 🦷",
+        "type": "Video",
+        "likes": 18,
+        "comments": 0,
+        "total_interactions": 18,
+        "timestamp": "2026-08-05T14:32:55+0000"
+      },
+      {
+        "caption": "No esperes a que duela 🦷",
+        "type": "Video",
+        "likes": 17,
+        "comments": 0,
+        "total_interactions": 17,
+        "timestamp": "2026-08-14T15:14:23+0000"
+      },
+      {
+        "caption": "¿Ya agendaste tu cita? 🦷",
+        "type": "Video",
+        "likes": 17,
+        "comments": 0,
+        "total_interactions": 17,
+        "timestamp": "2026-08-01T15:12:12+0000"
+      }
+    ]
+  }
+}
