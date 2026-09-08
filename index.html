@@ -196,6 +196,7 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .plat-btn{padding:4px 12px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;color:var(--t3);transition:all .15s;white-space:nowrap;}
 .plat-btn:hover{color:var(--t2);}
 .plat-btn.active{background:var(--surf);color:var(--acc);box-shadow:var(--shadow-s);}
+.api-notice{font-size:10px;color:var(--t3);padding:6px 14px;background:var(--bg);border:1px solid var(--border-s);border-radius:8px;text-align:center;}
 
 /* KPI row */
 .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
@@ -546,6 +547,16 @@ function render() {
     return;
   }
 
+  // Meses disponibles (últimos 90 días + Acumulado)
+  const cutoff = new Date(Date.now() - 90 * 86400000);
+  const cutoffKey = `${cutoff.getFullYear()}-${String(cutoff.getMonth()+1).padStart(2,'0')}`;
+  const availableMonths = MONTHS.filter(m => !m.key || m.key >= cutoffKey);
+
+  // Si el mes seleccionado ya no está disponible, resetear a 'all'
+  if (currentMonth !== 'all' && !availableMonths.find(m => m.id === currentMonth)) {
+    currentMonth = 'all';
+  }
+
   // Datos del mes seleccionado
   const monthInfo = MONTHS.find(m => m.id === currentMonth);
   const monthKey  = monthInfo?.key;
@@ -602,8 +613,10 @@ function render() {
   const posts = (LIVE?.posts?.length) ? LIVE.posts : STATIC.posts;
   const cl = STATIC;
 
-  // Datos disponibles para el mes seleccionado
-  const hasMonthData = !!(igMonthData || fbMonthData);
+  // Mes con datos reales = al menos una métrica > 0
+  const igHasData = igMonthData && (igMonthData.views > 0 || igMonthData.interactions > 0);
+  const fbHasData = fbMonthData && (fbMonthData.impressions > 0 || fbMonthData.engagements > 0);
+  const hasMonthData = isIG ? igHasData : fbHasData;
 
   const periodLabel = LIVE
     ? (currentMonth === 'all' ? 'Últimos 30 días · API en vivo' : `${monthInfo?.label} 2026 · API en vivo`)
@@ -615,19 +628,20 @@ function render() {
     <div class="month-bar">
       <span class="mf-label">Período</span>
       <div class="mf-chips">
-        ${MONTHS.map(m=>`<div class="mf-chip${m.id===currentMonth?' active':''}" data-month="${m.id}">${m.label}</div>`).join('')}
+        ${availableMonths.map(m=>`<div class="mf-chip${m.id===currentMonth?' active':''}" data-month="${m.id}">${m.label}</div>`).join('')}
       </div>
       <div class="plat-toggle">
         <div class="plat-btn${currentPlatform==='ig'?' active':''}" data-plat="ig">📸 IG</div>
         <div class="plat-btn${currentPlatform==='fb'?' active':''}" data-plat="fb">📘 FB</div>
       </div>
     </div>
+    <div class="api-notice">📅 La API de Instagram guarda detalles de los últimos 90 días — solo se muestran los meses disponibles</div>
 
     ${currentMonth !== 'all' && !hasMonthData ? `
       <div class="month-empty">
         <div class="me-icon">⏳</div>
-        <div class="me-ttl">Cargando datos de ${MONTHS.find(m=>m.id===currentMonth)?.label} 2026...</div>
-        <div class="me-sub">El workflow de GitHub Actions actualiza los datos históricos cada hora. Espera un momento y recarga.</div>
+        <div class="me-ttl">Sin datos de API para ${MONTHS.find(m=>m.id===currentMonth)?.label} 2026</div>
+        <div class="me-sub">Instagram solo conserva insights detallados de los últimos ~90 días. Los datos de meses anteriores a julio no están disponibles en la API.</div>
       </div>
     ` : `
 
