@@ -39,15 +39,18 @@ function getMonthRanges() {
 
 async function fetchIGTotals(since, until) {
   try {
+    // Sin metric_type=total_value: devuelve serie diaria → sumamos nosotros
     const data = await get(`/${IG_ID}/insights`,
-      `&metric=views,total_interactions,accounts_engaged,profile_views&metric_type=total_value&period=day&since=${since}&until=${until}`);
+      `&metric=views,total_interactions,accounts_engaged,profile_views&period=day&since=${since}&until=${until}`);
     const m = {};
-    (data.data || []).forEach(d => { m[d.name] = d.total_value?.value || 0; });
+    (data.data || []).forEach(d => {
+      if (d.values) m[d.name] = d.values.reduce((s, v) => s + (v.value || 0), 0);
+    });
     return {
-      views:             m.views || 0,
-      interactions:      m.total_interactions || 0,
-      accounts_engaged:  m.accounts_engaged || 0,
-      profile_views:     m.profile_views || 0,
+      views:            m.views || 0,
+      interactions:     m.total_interactions || 0,
+      accounts_engaged: m.accounts_engaged || 0,
+      profile_views:    m.profile_views || 0,
     };
   } catch (e) {
     console.warn(`  IG totals ${since}: ${e.message}`);
