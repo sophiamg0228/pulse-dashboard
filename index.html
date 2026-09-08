@@ -192,8 +192,10 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 }
 .mf-chip:hover{border-color:var(--acc);color:var(--acc);}
 .mf-chip.active{background:var(--acc);color:#fff;border-color:var(--acc);}
-.mf-chip.locked{opacity:.5;cursor:default;}
-.mf-chip.locked:hover{border-color:var(--border);color:var(--t2);}
+.plat-toggle{display:flex;gap:3px;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:3px;flex-shrink:0;}
+.plat-btn{padding:4px 12px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;color:var(--t3);transition:all .15s;white-space:nowrap;}
+.plat-btn:hover{color:var(--t2);}
+.plat-btn.active{background:var(--surf);color:var(--acc);box-shadow:var(--shadow-s);}
 
 /* KPI row */
 .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
@@ -453,10 +455,10 @@ const SPARKS = [
 ];
 
 const MONTHS = [
-  { id:'all',  label:'Acumulado' },
-  { id:'ene',  label:'Ene' },{ id:'feb',  label:'Feb' },{ id:'mar',  label:'Mar' },
-  { id:'abr',  label:'Abr' },{ id:'may',  label:'May' },{ id:'jun',  label:'Jun' },
-  { id:'jul',  label:'Jul' },{ id:'ago',  label:'Ago' },{ id:'sep',  label:'Sep' },
+  { id:'all',  label:'Acumulado', key:null },
+  { id:'ene',  label:'Ene', key:'2026-01' },{ id:'feb', label:'Feb', key:'2026-02' },{ id:'mar', label:'Mar', key:'2026-03' },
+  { id:'abr',  label:'Abr', key:'2026-04' },{ id:'may', label:'May', key:'2026-05' },{ id:'jun', label:'Jun', key:'2026-06' },
+  { id:'jul',  label:'Jul', key:'2026-07' },{ id:'ago', label:'Ago', key:'2026-08' },{ id:'sep', label:'Sep', key:'2026-09' },
 ];
 
 // ── LIVE STATE ────────────────────────────────────────
@@ -464,6 +466,7 @@ let LIVE = null;
 let lastFetched = null;
 let currentTab = 'redes';
 let currentMonth = 'all';
+let currentPlatform = 'ig';
 let refreshTimer = null;
 
 // ── UTILS ─────────────────────────────────────────────
@@ -487,8 +490,10 @@ function timeAgo(date) {
 async function fetchLiveData() {
   const data = await fetch(METRICS_URL + '?t=' + Date.now()).then(r => r.json());
   const ig = data.ig;
+  const fb = data.fb || {};
 
   LIVE = {
+    // IG 30d
     followers:    ig.followers,
     views:        ig.views_30d,
     engaged:      ig.accounts_engaged_30d,
@@ -496,12 +501,20 @@ async function fetchLiveData() {
     profileViews: ig.profile_views_30d,
     reach:        ig.reach_28d,
     updated:      data.updated,
-    posts: ig.top_posts.slice(0, 4).map(p => ({
+    posts: (ig.top_posts || []).slice(0, 4).map(p => ({
       ttl:  p.caption || 'Publicación sin texto',
       type: `${{ Video:'🎬', Imagen:'🖼', Carrusel:'📂' }[p.type] || '📄'} ${p.type}`,
       views: `❤️ ${p.likes}  💬 ${p.comments}`,
       int:  p.total_interactions,
     })),
+    // IG mensual
+    ig: { monthly: ig.monthly || {} },
+    // FB
+    fb_fans:        fb.fans || 0,
+    fb_impressions: fb.impressions_30d || 0,
+    fb_reach:       fb.reach_30d || 0,
+    fb_engagements: fb.engagements_30d || 0,
+    fb: { monthly: fb.monthly || {} },
   };
   lastFetched = new Date();
 }
@@ -533,35 +546,88 @@ function render() {
     return;
   }
 
-  // Decide KPIs: live o estático
-  const kpis = LIVE ? [
-    { lbl:'Visualizaciones · 30 días',  val:fmt(LIVE.views),        change:'En vivo', type:'live', color:'var(--acc)',    bar:'#0DC5D4' },
-    { lbl:'Alcance Instagram · 28 días',val:fmt(LIVE.reach),        change:'En vivo', type:'live', color:'var(--purple)', bar:'#A78BFA' },
-    { lbl:'Interacciones · 30 días',    val:fmt(LIVE.interactions), change:'En vivo', type:'live', color:'var(--rose)',   bar:'#FB7185' },
-    { lbl:'Seguidores Instagram',       val:LIVE.followers.toLocaleString('es-CO'), change:'Actual', type:'live', color:'var(--ok)', bar:'#4ADE80' },
-  ] : STATIC.kpis;
+  // Datos del mes seleccionado
+  const monthInfo = MONTHS.find(m => m.id === currentMonth);
+  const monthKey  = monthInfo?.key;
+  const igMonthData = monthKey ? LIVE?.ig?.monthly?.[monthKey] : null;
+  const fbMonthData = monthKey ? LIVE?.fb?.monthly?.[monthKey] : null;
+  const isIG = currentPlatform === 'ig';
+
+  // KPIs según plataforma + período
+  let kpis;
+  if (isIG) {
+    if (igMonthData) {
+      kpis = [
+        { lbl:`Visualizaciones · ${monthInfo.label} 2026`,    val:fmt(igMonthData.views),            change:'Mensual', type:'live', color:'var(--acc)',    bar:'#0DC5D4' },
+        { lbl:`Interacciones · ${monthInfo.label} 2026`,      val:fmt(igMonthData.interactions),     change:'Mensual', type:'live', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:`Cuentas alcanzadas · ${monthInfo.label}`,      val:fmt(igMonthData.accounts_engaged), change:'Mensual', type:'live', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:`Visitas al perfil · ${monthInfo.label}`,       val:fmt(igMonthData.profile_views),    change:'Mensual', type:'live', color:'var(--ok)',    bar:'#4ADE80' },
+      ];
+    } else if (LIVE) {
+      kpis = [
+        { lbl:'Visualizaciones · 30 días',  val:fmt(LIVE.views),        change:'En vivo', type:'live', color:'var(--acc)',    bar:'#0DC5D4' },
+        { lbl:'Alcance Instagram · 28 días',val:fmt(LIVE.reach),        change:'En vivo', type:'live', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:'Interacciones · 30 días',    val:fmt(LIVE.interactions), change:'En vivo', type:'live', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:'Seguidores Instagram',       val:(LIVE.followers||0).toLocaleString('es-CO'), change:'Actual', type:'live', color:'var(--ok)', bar:'#4ADE80' },
+      ];
+    } else {
+      kpis = STATIC.kpis;
+    }
+  } else {
+    // Facebook
+    if (fbMonthData) {
+      kpis = [
+        { lbl:`Impresiones FB · ${monthInfo.label} 2026`, val:fmt(fbMonthData.impressions), change:'Mensual', type:'live', color:'var(--warn)',   bar:'#F59E0B' },
+        { lbl:`Alcance FB · ${monthInfo.label} 2026`,     val:fmt(fbMonthData.reach),       change:'Mensual', type:'live', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:`Interacciones FB · ${monthInfo.label}`,    val:fmt(fbMonthData.engagements), change:'Mensual', type:'live', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:'Seguidores FB',                             val:fmt(LIVE?.fb_fans || 29),    change:'Actual',  type:'live', color:'var(--ok)',    bar:'#4ADE80' },
+      ];
+    } else if (LIVE) {
+      kpis = [
+        { lbl:'Impresiones FB · 30 días', val:fmt(LIVE.fb_impressions || 11200), change:'En vivo', type:'live', color:'var(--warn)',   bar:'#F59E0B' },
+        { lbl:'Alcance FB · 30 días',     val:fmt(LIVE.fb_reach       || 5000),  change:'En vivo', type:'live', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:'Interacciones FB · 30d',   val:fmt(LIVE.fb_engagements || 321),   change:'En vivo', type:'live', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:'Seguidores FB',             val:fmt(LIVE.fb_fans        || 29),    change:'Actual',  type:'live', color:'var(--ok)',    bar:'#4ADE80' },
+      ];
+    } else {
+      kpis = [
+        { lbl:'Impresiones FB totales', val:'11.2K', change:'+82%',  type:'up', color:'var(--warn)',   bar:'#F59E0B' },
+        { lbl:'Alcance FB',             val:'5.7K',  change:'+105%', type:'up', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:'Interacciones FB',       val:'321',   change:'+155%', type:'up', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:'Seguidores FB',          val:'29',    change:'+26%',  type:'up', color:'var(--ok)',    bar:'#4ADE80' },
+      ];
+    }
+  }
 
   const posts = (LIVE?.posts?.length) ? LIVE.posts : STATIC.posts;
   const cl = STATIC;
 
-  const periodLabel = LIVE ? 'Últimos 30 días · API en vivo' : 'Ene 1 – Sep 7, 2026';
-  document.getElementById('tb-period').textContent =
-    currentMonth === 'all' ? periodLabel : `${MONTHS.find(m=>m.id===currentMonth)?.label} 2026`;
+  // Datos disponibles para el mes seleccionado
+  const hasMonthData = !!(igMonthData || fbMonthData);
+
+  const periodLabel = LIVE
+    ? (currentMonth === 'all' ? 'Últimos 30 días · API en vivo' : `${monthInfo?.label} 2026 · API en vivo`)
+    : 'Ene 1 – Sep 7, 2026';
+  document.getElementById('tb-period').textContent = periodLabel;
 
   c.innerHTML = `
-    <!-- Month filter -->
+    <!-- Month filter + platform toggle -->
     <div class="month-bar">
       <span class="mf-label">Período</span>
       <div class="mf-chips">
         ${MONTHS.map(m=>`<div class="mf-chip${m.id===currentMonth?' active':''}" data-month="${m.id}">${m.label}</div>`).join('')}
       </div>
+      <div class="plat-toggle">
+        <div class="plat-btn${currentPlatform==='ig'?' active':''}" data-plat="ig">📸 IG</div>
+        <div class="plat-btn${currentPlatform==='fb'?' active':''}" data-plat="fb">📘 FB</div>
+      </div>
     </div>
 
-    ${currentMonth !== 'all' ? `
+    ${currentMonth !== 'all' && !hasMonthData ? `
       <div class="month-empty">
-        <div class="me-icon">📅</div>
-        <div class="me-ttl">Datos de ${MONTHS.find(m=>m.id===currentMonth)?.label} 2026</div>
-        <div class="me-sub">Los reportes mensuales individuales se agregan cuando se carga el reporte de ese período. Actualmente está disponible el acumulado y últimos 30 días.</div>
+        <div class="me-icon">⏳</div>
+        <div class="me-ttl">Cargando datos de ${MONTHS.find(m=>m.id===currentMonth)?.label} 2026...</div>
+        <div class="me-sub">El workflow de GitHub Actions actualiza los datos históricos cada hora. Espera un momento y recarga.</div>
       </div>
     ` : `
 
@@ -684,6 +750,12 @@ function render() {
   document.querySelectorAll('.mf-chip').forEach(el => {
     el.addEventListener('click', () => {
       currentMonth = el.dataset.month;
+      render();
+    });
+  });
+  document.querySelectorAll('.plat-btn').forEach(el => {
+    el.addEventListener('click', () => {
+      currentPlatform = el.dataset.plat;
       render();
     });
   });
