@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08T19:59:52.981Z",
+  "updated": "2026-09-08T20:51:38.362Z",
   "client": "odontoclave",
   "ig": {
     "username": "odontoclave",
@@ -59,6 +59,115 @@
         "total_interactions": 17,
         "timestamp": "2026-08-01T15:12:12+0000"
       }
-    ]
+    ],
+    "monthly": {
+      "2026-01": {
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
+      },
+      "2026-02": {
+        "views": 14089,
+        "interactions": 37,
+        "accounts_engaged": 9,
+        "profile_views": 658
+      },
+      "2026-03": {
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
+      },
+      "2026-04": {
+        "views": 29153,
+        "interactions": 176,
+        "accounts_engaged": 56,
+        "profile_views": 852
+      },
+      "2026-05": {
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
+      },
+      "2026-06": {
+        "views": 23364,
+        "interactions": 138,
+        "accounts_engaged": 55,
+        "profile_views": 733
+      },
+      "2026-07": {
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
+      },
+      "2026-08": {
+        "views": 0,
+        "interactions": 0,
+        "accounts_engaged": 0,
+        "profile_views": 0
+      },
+      "2026-09": {
+        "views": 5266,
+        "interactions": 35,
+        "accounts_engaged": 18,
+        "profile_views": 158
+      }
+    }
+  },
+  "fb": {
+    "fans": 7190,
+    "impressions_30d": 0,
+    "reach_30d": 0,
+    "engagements_30d": 0,
+    "monthly": {
+      "2026-01": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-02": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-03": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-04": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-05": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-06": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-07": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-08": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      },
+      "2026-09": {
+        "impressions": 0,
+        "engagements": 0,
+        "reach": 0
+      }
+    }
   }
 }
