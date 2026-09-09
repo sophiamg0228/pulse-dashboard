@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-09T01:03:01.448Z",
+  "updated": "2026-09-09T07:04:52.170Z",
   "client": "odontoclave",
   "ig": {
     "username": "odontoclave",
-    "followers": 6281,
+    "followers": 6280,
     "media_count": 541,
-    "views_30d": 22652,
-    "reach_28d": 3560,
-    "interactions_30d": 248,
+    "views_30d": 22771,
+    "reach_28d": 3538,
+    "interactions_30d": 249,
     "accounts_engaged_30d": 127,
-    "profile_views_30d": 713,
+    "profile_views_30d": 714,
     "top_posts": [
       {
         "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -111,11 +111,11 @@
         "followers": 6281
       },
       "2026-09": {
-        "views": 5394,
-        "interactions": 35,
+        "views": 5510,
+        "interactions": 36,
         "accounts_engaged": 18,
-        "profile_views": 161,
-        "followers": 6281
+        "profile_views": 162,
+        "followers": 6280
       }
     }
   },
