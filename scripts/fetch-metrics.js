@@ -8,6 +8,27 @@ if (!TOKEN) { console.error('META_TOKEN no configurado'); process.exit(1); }
 
 function dateStr(d) { return new Date(d).toISOString().slice(0, 10); }
 
+// Descubrimiento de cuentas (corre al inicio para detectar nuevos clientes)
+async function discoverAccounts() {
+  try {
+    const pages = await get('/me/accounts', '&fields=id,name,fan_count&limit=25');
+    console.log('\n=== Cuentas disponibles en el token ===');
+    for (const p of (pages.data || [])) {
+      process.stdout.write(`  📘 ${p.name} | PAGE_ID: ${p.id} | Fans: ${p.fan_count || 0}`);
+      try {
+        const ig = await get(`/${p.id}`, '&fields=instagram_business_account');
+        if (ig.instagram_business_account?.id) {
+          const igId = ig.instagram_business_account.id;
+          const igP  = await get(`/${igId}`, '&fields=username,followers_count');
+          process.stdout.write(` | IG: @${igP.username} (${igP.followers_count} seg) | IG_ID: ${igId}`);
+        }
+      } catch {}
+      console.log('');
+    }
+    console.log('=======================================\n');
+  } catch(e) { console.warn('  discover:', e.message); }
+}
+
 async function get(path, params = '', customToken = TOKEN) {
   const url = `${API}${path}?access_token=${customToken}${params}`;
   const res = await fetch(url);
@@ -70,6 +91,7 @@ async function main() {
   const until    = dateStr(Date.now());
   const tomorrow = dateStr(Date.now() + 864e5);
 
+  await discoverAccounts();
   console.log(`Fetching metrics ${since30} → ${until}`);
 
   // ── Perfil IG ─────────────────────────────────────────
