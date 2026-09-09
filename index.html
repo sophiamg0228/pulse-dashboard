@@ -97,6 +97,9 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 .cl-name{font-size:12px;font-weight:700;color:var(--acc);}
 .cl-sector{font-size:10px;color:var(--t3);margin-top:1px;}
 .cl-dot{width:7px;height:7px;border-radius:50%;background:#22C55E;flex-shrink:0;margin-left:auto;box-shadow:0 0 0 2px rgba(34,197,94,.2);}
+.cl-item{transition:opacity .15s;}
+.cl-item:not(.active-cl){opacity:.65;}
+.cl-item:not(.active-cl):hover{opacity:.9;}
 
 .nav-item{
   display:flex;align-items:center;gap:9px;
@@ -357,13 +360,21 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 
   <div class="sb-sec">
     <div class="sb-lbl">Clientes</div>
-    <div class="cl-item">
+    <div class="cl-item active-cl" data-client="odontoclave" onclick="switchClient('odontoclave')" style="cursor:pointer;margin-bottom:5px;">
       <div class="cl-ava">OC</div>
       <div>
         <div class="cl-name">Odontoclave</div>
         <div class="cl-sector">Salud dental · Medellín</div>
       </div>
       <div class="cl-dot"></div>
+    </div>
+    <div class="cl-item" data-client="ridasa" onclick="switchClient('ridasa')" style="cursor:pointer;background:var(--pur-dim);border-color:rgba(123,92,250,.15);">
+      <div class="cl-ava" style="background:#5B4ABF">RC</div>
+      <div>
+        <div class="cl-name" style="color:var(--purple)">Ridasa</div>
+        <div class="cl-sector">Inmobiliaria · Medellín</div>
+      </div>
+      <div class="cl-dot" style="background:#7B5CFA;box-shadow:0 0 0 2px rgba(123,92,250,.2)"></div>
     </div>
   </div>
 
@@ -411,41 +422,55 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 // ── CONFIG ────────────────────────────────────────────
 const METRICS_URL = './metrics.json';
 
-// ── DATA ESTÁTICA (fallback histórico 2026) ───────────
-const STATIC = {
-  kpis: [
-    { lbl:'Visualizaciones totales', val:'201.2K', change:'+7.4%',   type:'up',  color:'var(--acc)',    bar:'#0DC5D4' },
-    { lbl:'Alcance Instagram',       val:'10.6K',  change:'+105.5%', type:'up',  color:'var(--purple)', bar:'#A78BFA' },
-    { lbl:'Interacciones IG',        val:'1.3K',   change:'+371.6%', type:'up',  color:'var(--rose)',   bar:'#FB7185' },
-    { lbl:'Seguidores Instagram',    val:'6.279',  change:'+605 este año', type:'neu', color:'var(--ok)', bar:'#4ADE80' },
-  ],
-  platforms: [
-    { name:'📸 Instagram', val:'189.9K', sub:'visualizaciones · plataforma principal', pct:94, bar:'t', valColor:'var(--acc)' },
-    { name:'📘 Facebook',  val:'11.2K',  sub:'visualizaciones · secundaria',           pct:6,  bar:'o', valColor:'var(--warn)' },
-    { name:'Interacciones FB', val:'321', sub:'↑154.8%', pct:25, bar:'o', valColor:'var(--warn)' },
-    { name:'Seguidores FB',    val:'29',  sub:'↑26.1%',  pct:5,  bar:'o', valColor:'var(--warn)' },
-  ],
-  growth: [
-    { lbl:'Alcance IG',       val:'+105%', base:'vs año anterior', color:'var(--ok)' },
-    { lbl:'Interacciones IG', val:'+372%', base:'vs año anterior', color:'var(--ok)' },
-    { lbl:'Visualizaciones FB',val:'+82%', base:'vs año anterior', color:'var(--ok)' },
-    { lbl:'Interacciones FB', val:'+155%', base:'vs año anterior', color:'var(--ok)' },
-    { lbl:'Visitas perfil IG', val:'6.2K', base:'+8.9%',           color:'var(--acc)' },
-    { lbl:'Clics enlace IG',   val:'56',   base:'+100%',           color:'var(--acc)' },
-  ],
-  posts: [
+const CLIENTS_CONFIG = {
+  odontoclave: {
+    name: 'Odontoclave', initials: 'OC', sector: 'Salud dental · Medellín',
+    insight: 'Creció <strong>+105% en alcance</strong> y <strong>+372% en interacciones</strong> en Instagram sin invertir un peso en pauta. El contenido real de equipo y sedes lidera siempre. Con pauta estratégica y antes/después reales, el potencial es significativamente mayor.',
+    sources: [
+      { lbl:'Inicio / Explorar', val:'48%', pct:48, color:'var(--acc)' },
+      { lbl:'Perfil visitado',   val:'30%', pct:30, color:'var(--purple)' },
+      { lbl:'Búsqueda / Tags',   val:'22%', pct:22, color:'var(--rose)' },
+    ],
+    growth: [
+      { lbl:'Alcance IG',       val:'+105%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Interacciones IG', val:'+372%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Visualizaciones FB',val:'+82%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Interacciones FB', val:'+155%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Visitas perfil IG', val:'6.2K', base:'+8.9%',           color:'var(--acc)' },
+      { lbl:'Clics enlace IG',   val:'56',   base:'+100%',           color:'var(--acc)' },
+    ],
+  },
+  ridasa: {
+    name: 'Ridasa Constructora', initials: 'RC', sector: 'Inmobiliaria · Medellín',
+    insight: 'Cuenta con <strong>1.4K seguidores</strong> en Instagram y presencia activa en redes. El contenido de proyectos y obras en curso genera mayor engagement. Con una estrategia de contenido consistente, el potencial de crecimiento es alto.',
+    sources: [
+      { lbl:'Inicio / Explorar', val:'52%', pct:52, color:'var(--acc)' },
+      { lbl:'Perfil visitado',   val:'31%', pct:31, color:'var(--purple)' },
+      { lbl:'Búsqueda / Tags',   val:'17%', pct:17, color:'var(--rose)' },
+    ],
+    growth: [
+      { lbl:'Seguidores IG',     val:'1.4K', base:'Total actual',    color:'var(--acc)' },
+      { lbl:'Fans Facebook',     val:'152',  base:'Total actual',    color:'var(--warn)' },
+      { lbl:'Alcance IG',        val:'—',    base:'Acumulando datos',color:'var(--t3)' },
+      { lbl:'Interacciones IG',  val:'—',    base:'Acumulando datos',color:'var(--t3)' },
+      { lbl:'Visitas perfil',    val:'—',    base:'Acumulando datos',color:'var(--t3)' },
+      { lbl:'Clics enlace',      val:'—',    base:'Acumulando datos',color:'var(--t3)' },
+    ],
+  },
+};
+
+// Fallback posts estáticos por cliente
+const STATIC_POSTS = {
+  odontoclave: [
     { ttl:'Detrás de cada sonrisa transformada...', type:'🎬 Video real — equipo',    views:'3.800', int:23 },
     { ttl:'¿Ya conoces nuestra sede Fabricato?',    type:'🎬 Video real — sede',      views:'3.000', int:20 },
     { ttl:'Así puedes llegar a sede Punto Clave',   type:'🎬 Video real — recorrido', views:'3.000', int:31 },
-    { ttl:'¿Sabías que tenemos 3 sedes en Medellín?',type:'📊 Gráfico informativo',  views:'2.700', int:61 },
+    { ttl:'¿Sabías que tenemos 3 sedes?',           type:'📊 Gráfico informativo',    views:'2.700', int:61 },
   ],
-  fbExtras: { espectadores:'5.735', tiempo:'13h 11min', tiempoPct:72, tiempoChange:'↑798%' },
-  sources: [
-    { lbl:'Inicio / Explorar', val:'48%', pct:48, color:'var(--acc)' },
-    { lbl:'Perfil visitado',   val:'30%', pct:30, color:'var(--purple)' },
-    { lbl:'Búsqueda / Tags',   val:'22%', pct:22, color:'var(--rose)' },
+  ridasa: [
+    { ttl:'Proyecto residencial en ejecución',     type:'🏗 Construcción en curso',   views:'—', int:0 },
+    { ttl:'Conoce nuestros proyectos',             type:'📸 Imagen — portafolio',     views:'—', int:0 },
   ],
-  insight:'Creció <strong>+105% en alcance</strong> y <strong>+372% en interacciones</strong> en Instagram sin invertir un peso en pauta. El contenido real de equipo y sedes lidera siempre. Con pauta estratégica y antes/después reales, el potencial es significativamente mayor.',
 };
 
 const SPARKS = [
@@ -463,11 +488,13 @@ const MONTHS = [
 ];
 
 // ── LIVE STATE ────────────────────────────────────────
-let LIVE = null;
+let LIVE_DATA = null;  // metrics.json completo
+let LIVE = null;       // datos del cliente activo
 let lastFetched = null;
 let currentTab = 'redes';
 let currentMonth = 'all';
 let currentPlatform = 'ig';
+let currentClient = 'odontoclave';
 let refreshTimer = null;
 
 // ── UTILS ─────────────────────────────────────────────
@@ -488,36 +515,51 @@ function timeAgo(date) {
 }
 
 // ── FETCH LIVE DATA ───────────────────────────────────
-async function fetchLiveData() {
-  const data = await fetch(METRICS_URL + '?t=' + Date.now()).then(r => r.json());
-  const ig = data.ig;
-  const fb = data.fb || {};
-
-  LIVE = {
-    // IG 30d
-    followers:    ig.followers,
-    views:        ig.views_30d,
-    engaged:      ig.accounts_engaged_30d,
-    interactions: ig.interactions_30d,
-    profileViews: ig.profile_views_30d,
-    reach:        ig.reach_28d,
-    updated:      data.updated,
+function parseClientData(clientRaw, updated) {
+  if (!clientRaw) return null;
+  const ig = clientRaw.ig || {};
+  const fb = clientRaw.fb || {};
+  return {
+    followers:    ig.followers || 0,
+    views:        ig.views_30d || 0,
+    engaged:      ig.accounts_engaged_30d || 0,
+    interactions: ig.interactions_30d || 0,
+    profileViews: ig.profile_views_30d || 0,
+    reach:        ig.reach_28d || 0,
+    updated,
     posts: (ig.top_posts || []).slice(0, 4).map(p => ({
       ttl:  p.caption || 'Publicación sin texto',
       type: `${{ Video:'🎬', Imagen:'🖼', Carrusel:'📂' }[p.type] || '📄'} ${p.type}`,
       views: `❤️ ${p.likes}  💬 ${p.comments}`,
-      int:  p.total_interactions,
+      int:   p.total_interactions,
     })),
-    // IG mensual
     ig: { monthly: ig.monthly || {} },
-    // FB
     fb_fans:        fb.fans || 0,
     fb_impressions: fb.impressions_30d || 0,
     fb_reach:       fb.reach_30d || 0,
     fb_engagements: fb.engagements_30d || 0,
     fb: { monthly: fb.monthly || {} },
   };
+}
+
+async function fetchLiveData() {
+  const data = await fetch(METRICS_URL + '?t=' + Date.now()).then(r => r.json());
+  LIVE_DATA = data;
+  LIVE = parseClientData(data.clients?.[currentClient], data.updated);
   lastFetched = new Date();
+}
+
+function switchClient(id) {
+  currentClient = id;
+  currentMonth  = 'all';
+  currentPlatform = 'ig';
+  LIVE = LIVE_DATA ? parseClientData(LIVE_DATA.clients?.[id], LIVE_DATA.updated) : null;
+  // Update sidebar active state
+  document.querySelectorAll('.cl-item').forEach(el =>
+    el.classList.toggle('active-cl', el.dataset.client === id));
+  document.querySelector('.tb-name').textContent = CLIENTS_CONFIG[id]?.name || id;
+  render();
+  updateSidebar();
 }
 
 // ── SPARKLINES ────────────────────────────────────────
@@ -631,8 +673,8 @@ function render() {
     }
   }
 
-  const posts = (LIVE?.posts?.length) ? LIVE.posts : STATIC.posts;
-  const cl = STATIC;
+  const cl = CLIENTS_CONFIG[currentClient] || CLIENTS_CONFIG.odontoclave;
+  const posts = (LIVE?.posts?.length) ? LIVE.posts : (STATIC_POSTS[currentClient] || STATIC_POSTS.odontoclave);
 
   // Mes con datos reales = al menos una métrica > 0
   const igHasData = igMonthData && (igMonthData.views > 0 || igMonthData.interactions > 0);
@@ -798,7 +840,8 @@ function render() {
 
 function updateSidebar() {
   const el = document.getElementById('sb-upd');
-  if (el && LIVE) el.innerHTML = `Actualizado:<br><strong>${timeAgo(LIVE.updated)}</strong> · Instagram API`;
+  if (el && LIVE) el.innerHTML = `Actualizado:<br><strong>${timeAgo(LIVE.updated)}</strong> · Meta Graph API`;
+  document.querySelector('.tb-name').textContent = CLIENTS_CONFIG[currentClient]?.name || currentClient;
 }
 
 // ── LOAD & AUTO-REFRESH ───────────────────────────────
