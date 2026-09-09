@@ -1,174 +1,198 @@
 {
-  "updated": "2026-09-09T15:10:12.929Z",
-  "client": "odontoclave",
-  "ig": {
-    "username": "odontoclave",
-    "followers": 6280,
-    "media_count": 541,
-    "views_30d": 22771,
-    "reach_28d": 3543,
-    "interactions_30d": 249,
-    "accounts_engaged_30d": 127,
-    "profile_views_30d": 714,
-    "top_posts": [
-      {
-        "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
-        "type": "Video",
-        "likes": 53,
-        "comments": 1,
-        "total_interactions": 54,
-        "timestamp": "2026-08-19T18:28:22+0000"
+  "updated": "2026-09-09T15:13:06.509Z",
+  "clients": {
+    "odontoclave": {
+      "name": "Odontoclave",
+      "ig": {
+        "username": "odontoclave",
+        "followers": 6280,
+        "media_count": 541,
+        "views_30d": 22771,
+        "reach_28d": 3543,
+        "interactions_30d": 249,
+        "accounts_engaged_30d": 127,
+        "profile_views_30d": 714,
+        "top_posts": [
+          {
+            "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
+            "type": "Video",
+            "likes": 53,
+            "comments": 1,
+            "total_interactions": 54,
+            "timestamp": "2026-08-19T18:28:22+0000"
+          },
+          {
+            "caption": "Detrás de cada sonrisa transformada, hay personas que se formaron para cuidarla ",
+            "type": "Imagen",
+            "likes": 20,
+            "comments": 0,
+            "total_interactions": 20,
+            "timestamp": "2026-06-08T15:17:54+0000"
+          },
+          {
+            "caption": "¿Ya conoces nuestra sede fabricato ? 👀 qué esperas para agendar tu cita ! 🤔 en",
+            "type": "Video",
+            "likes": 19,
+            "comments": 0,
+            "total_interactions": 19,
+            "timestamp": "2026-05-23T15:17:15+0000"
+          },
+          {
+            "caption": "¿Cuándo fue la última vez que visitaste al odontólogo? 🦷",
+            "type": "Video",
+            "likes": 18,
+            "comments": 0,
+            "total_interactions": 18,
+            "timestamp": "2026-08-05T14:32:55+0000"
+          },
+          {
+            "caption": "No esperes a que duela 🦷",
+            "type": "Video",
+            "likes": 17,
+            "comments": 0,
+            "total_interactions": 17,
+            "timestamp": "2026-08-14T15:14:23+0000"
+          },
+          {
+            "caption": "¿Ya agendaste tu cita? 🦷",
+            "type": "Video",
+            "likes": 17,
+            "comments": 0,
+            "total_interactions": 17,
+            "timestamp": "2026-08-01T15:12:12+0000"
+          }
+        ],
+        "monthly": {
+          "2026-09": {
+            "views": 5563,
+            "interactions": 38,
+            "accounts_engaged": 20,
+            "profile_views": 163,
+            "followers": 6280
+          },
+          "2026-08": {
+            "views": 17261,
+            "interactions": 213,
+            "accounts_engaged": 118,
+            "profile_views": 552,
+            "followers": 6280
+          }
+        }
       },
-      {
-        "caption": "Detrás de cada sonrisa transformada, hay personas que se formaron para cuidarla ",
-        "type": "Imagen",
-        "likes": 20,
-        "comments": 0,
-        "total_interactions": 20,
-        "timestamp": "2026-06-08T15:17:54+0000"
-      },
-      {
-        "caption": "¿Ya conoces nuestra sede fabricato ? 👀 qué esperas para agendar tu cita ! 🤔 en",
-        "type": "Video",
-        "likes": 19,
-        "comments": 0,
-        "total_interactions": 19,
-        "timestamp": "2026-05-23T15:17:15+0000"
-      },
-      {
-        "caption": "¿Cuándo fue la última vez que visitaste al odontólogo? 🦷",
-        "type": "Video",
-        "likes": 18,
-        "comments": 0,
-        "total_interactions": 18,
-        "timestamp": "2026-08-05T14:32:55+0000"
-      },
-      {
-        "caption": "No esperes a que duela 🦷",
-        "type": "Video",
-        "likes": 17,
-        "comments": 0,
-        "total_interactions": 17,
-        "timestamp": "2026-08-14T15:14:23+0000"
-      },
-      {
-        "caption": "¿Ya agendaste tu cita? 🦷",
-        "type": "Video",
-        "likes": 17,
-        "comments": 0,
-        "total_interactions": 17,
-        "timestamp": "2026-08-01T15:12:12+0000"
+      "fb": {
+        "fans": 7190,
+        "impressions_30d": 0,
+        "reach_30d": 0,
+        "engagements_30d": 0,
+        "monthly": {
+          "2026-09": {
+            "impressions": 0,
+            "engagements": 0,
+            "reach": 0
+          },
+          "2026-08": {
+            "impressions": 0,
+            "engagements": 0,
+            "reach": 0
+          }
+        }
       }
-    ],
-    "monthly": {
-      "2026-01": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
+    },
+    "ridasa": {
+      "name": "Ridasa Constructora",
+      "ig": {
+        "username": "ridasaconstructora",
+        "followers": 1412,
+        "media_count": 679,
+        "views_30d": 16970,
+        "reach_28d": 5148,
+        "interactions_30d": 86,
+        "accounts_engaged_30d": 40,
+        "profile_views_30d": 95,
+        "top_posts": [
+          {
+            "caption": "📍 Alvarado, Tolima",
+            "type": "Imagen",
+            "likes": 6,
+            "comments": 0,
+            "total_interactions": 6,
+            "timestamp": "2026-08-17T15:00:12+0000"
+          },
+          {
+            "caption": "📍 Lotes en Alvarado, Tolima — a 30 min de Ibagué",
+            "type": "Video",
+            "likes": 6,
+            "comments": 0,
+            "total_interactions": 6,
+            "timestamp": "2026-07-18T17:11:57+0000"
+          },
+          {
+            "caption": "📍 Alvarado, Tolima",
+            "type": "Video",
+            "likes": 5,
+            "comments": 0,
+            "total_interactions": 5,
+            "timestamp": "2026-08-27T16:50:58+0000"
+          },
+          {
+            "caption": "📍 Alvarado, Tolima",
+            "type": "Imagen",
+            "likes": 4,
+            "comments": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-09-04T15:00:11+0000"
+          },
+          {
+            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "type": "Video",
+            "likes": 4,
+            "comments": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-09-01T13:38:06+0000"
+          },
+          {
+            "caption": "📍 Lotes en Alvarado, Tolima",
+            "type": "Video",
+            "likes": 4,
+            "comments": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-08-19T20:50:00+0000"
+          }
+        ],
+        "monthly": {
+          "2026-09": {
+            "views": 3704,
+            "interactions": 35,
+            "accounts_engaged": 19,
+            "profile_views": 18,
+            "followers": 1412
+          },
+          "2026-08": {
+            "views": 13390,
+            "interactions": 51,
+            "accounts_engaged": 29,
+            "profile_views": 77,
+            "followers": 1412
+          }
+        }
       },
-      "2026-02": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
-      },
-      "2026-03": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
-      },
-      "2026-04": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
-      },
-      "2026-05": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
-      },
-      "2026-06": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
-      },
-      "2026-07": {
-        "views": 0,
-        "interactions": 0,
-        "accounts_engaged": 0,
-        "profile_views": 0
-      },
-      "2026-08": {
-        "views": 17599,
-        "interactions": 216,
-        "accounts_engaged": 120,
-        "profile_views": 562,
-        "followers": 6281
-      },
-      "2026-09": {
-        "views": 5563,
-        "interactions": 38,
-        "accounts_engaged": 20,
-        "profile_views": 163,
-        "followers": 6280
-      }
-    }
-  },
-  "fb": {
-    "fans": 7190,
-    "impressions_30d": 0,
-    "reach_30d": 0,
-    "engagements_30d": 0,
-    "monthly": {
-      "2026-01": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-02": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-03": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-04": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-05": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-06": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-07": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-08": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
-      },
-      "2026-09": {
-        "impressions": 0,
-        "engagements": 0,
-        "reach": 0
+      "fb": {
+        "fans": 152,
+        "impressions_30d": 0,
+        "reach_30d": 0,
+        "engagements_30d": 0,
+        "monthly": {
+          "2026-09": {
+            "impressions": 0,
+            "engagements": 0,
+            "reach": 0
+          },
+          "2026-08": {
+            "impressions": 0,
+            "engagements": 0,
+            "reach": 0
+          }
+        }
       }
     }
   }
