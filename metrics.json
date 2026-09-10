@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10T00:53:50.975Z",
+  "updated": "2026-09-10T05:36:56.877Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,18 +7,18 @@
         "username": "odontoclave",
         "followers": 6282,
         "media_count": 541,
-        "views_30d": 21932,
-        "reach_28d": 3549,
-        "interactions_30d": 244,
-        "accounts_engaged_30d": 127,
-        "profile_views_30d": 708,
+        "views_30d": 21990,
+        "reach_28d": 3555,
+        "interactions_30d": 262,
+        "accounts_engaged_30d": 128,
+        "profile_views_30d": 710,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
             "type": "Video",
-            "likes": 53,
+            "likes": 54,
             "comments": 1,
-            "total_interactions": 54,
+            "total_interactions": 55,
             "timestamp": "2026-08-19T18:28:22+0000"
           },
           {
@@ -32,10 +32,18 @@
           {
             "caption": "¿Ya conoces nuestra sede fabricato ? 👀 qué esperas para agendar tu cita ! 🤔 en",
             "type": "Video",
-            "likes": 19,
+            "likes": 20,
             "comments": 0,
-            "total_interactions": 19,
+            "total_interactions": 20,
             "timestamp": "2026-05-23T15:17:15+0000"
+          },
+          {
+            "caption": "No esperes a que duela 🦷",
+            "type": "Video",
+            "likes": 18,
+            "comments": 0,
+            "total_interactions": 18,
+            "timestamp": "2026-08-14T15:14:23+0000"
           },
           {
             "caption": "¿Cuándo fue la última vez que visitaste al odontólogo? 🦷",
@@ -46,28 +54,20 @@
             "timestamp": "2026-08-05T14:32:55+0000"
           },
           {
-            "caption": "No esperes a que duela 🦷",
-            "type": "Video",
-            "likes": 17,
-            "comments": 0,
-            "total_interactions": 17,
-            "timestamp": "2026-08-14T15:14:23+0000"
-          },
-          {
             "caption": "¿Ya agendaste tu cita? 🦷",
             "type": "Video",
-            "likes": 17,
+            "likes": 18,
             "comments": 0,
-            "total_interactions": 17,
+            "total_interactions": 18,
             "timestamp": "2026-08-01T15:12:12+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 5745,
-            "interactions": 40,
-            "accounts_engaged": 20,
-            "profile_views": 177,
+            "views": 5803,
+            "interactions": 58,
+            "accounts_engaged": 21,
+            "profile_views": 179,
             "followers": 6282
           },
           "2026-08": {
@@ -80,7 +80,7 @@
         }
       },
       "fb": {
-        "fans": 7190,
+        "fans": 7191,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
@@ -104,10 +104,10 @@
         "username": "ridasaconstructora",
         "followers": 1414,
         "media_count": 679,
-        "views_30d": 16614,
-        "reach_28d": 5173,
-        "interactions_30d": 88,
-        "accounts_engaged_30d": 41,
+        "views_30d": 16710,
+        "reach_28d": 5215,
+        "interactions_30d": 89,
+        "accounts_engaged_30d": 42,
         "profile_views_30d": 91,
         "top_posts": [
           {
@@ -161,9 +161,9 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 3958,
-            "interactions": 38,
-            "accounts_engaged": 21,
+            "views": 4054,
+            "interactions": 39,
+            "accounts_engaged": 22,
             "profile_views": 19,
             "followers": 1414
           },
