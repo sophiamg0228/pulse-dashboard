@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11T20:29:12.895Z",
+  "updated": "2026-09-11T22:58:24.220Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -8,7 +8,7 @@
         "followers": 6286,
         "media_count": 542,
         "views_30d": 21464,
-        "reach_28d": 3355,
+        "reach_28d": 3365,
         "interactions_30d": 263,
         "accounts_engaged_30d": 130,
         "profile_views_30d": 715,
@@ -56,18 +56,18 @@
           {
             "caption": "Ya agendaste tu cita ? En Odontoclave nos dedicamos a realizar sonrisas de ensue",
             "type": "Video",
-            "likes": 15,
+            "likes": 16,
             "comments": 0,
-            "total_interactions": 15,
+            "total_interactions": 16,
             "timestamp": "2026-07-19T15:25:59+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 7064,
-            "interactions": 69,
-            "accounts_engaged": 23,
-            "profile_views": 225,
+            "views": 7107,
+            "interactions": 71,
+            "accounts_engaged": 24,
+            "profile_views": 228,
             "followers": 6286
           },
           "2026-08": {
@@ -161,7 +161,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 4522,
+            "views": 4557,
             "interactions": 40,
             "accounts_engaged": 22,
             "profile_views": 20,
