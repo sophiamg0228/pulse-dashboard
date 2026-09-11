@@ -1,14 +1,14 @@
 {
-  "updated": "2026-09-11T13:15:19.855Z",
+  "updated": "2026-09-11T17:31:30.215Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6284,
-        "media_count": 541,
+        "followers": 6285,
+        "media_count": 542,
         "views_30d": 21464,
-        "reach_28d": 3334,
+        "reach_28d": 3350,
         "interactions_30d": 263,
         "accounts_engaged_30d": 130,
         "profile_views_30d": 715,
@@ -28,14 +28,6 @@
             "comments": 0,
             "total_interactions": 20,
             "timestamp": "2026-06-08T15:17:54+0000"
-          },
-          {
-            "caption": "¿Ya conoces nuestra sede fabricato ? 👀 qué esperas para agendar tu cita ! 🤔 en",
-            "type": "Video",
-            "likes": 20,
-            "comments": 0,
-            "total_interactions": 20,
-            "timestamp": "2026-05-23T15:17:15+0000"
           },
           {
             "caption": "No esperes a que duela 🦷",
@@ -60,15 +52,23 @@
             "comments": 0,
             "total_interactions": 18,
             "timestamp": "2026-08-01T15:12:12+0000"
+          },
+          {
+            "caption": "Ya agendaste tu cita ? En Odontoclave nos dedicamos a realizar sonrisas de ensue",
+            "type": "Video",
+            "likes": 15,
+            "comments": 0,
+            "total_interactions": 15,
+            "timestamp": "2026-07-19T15:25:59+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 6665,
-            "interactions": 66,
+            "views": 6904,
+            "interactions": 69,
             "accounts_engaged": 23,
-            "profile_views": 219,
-            "followers": 6284
+            "profile_views": 222,
+            "followers": 6285
           },
           "2026-08": {
             "views": 17261,
@@ -105,7 +105,7 @@
         "followers": 1414,
         "media_count": 679,
         "views_30d": 16363,
-        "reach_28d": 4795,
+        "reach_28d": 4806,
         "interactions_30d": 90,
         "accounts_engaged_30d": 41,
         "profile_views_30d": 89,
@@ -161,7 +161,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 4396,
+            "views": 4465,
             "interactions": 40,
             "accounts_engaged": 22,
             "profile_views": 20,
