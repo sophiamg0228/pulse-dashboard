@@ -1,17 +1,17 @@
 {
-  "updated": "2026-09-12T23:44:53.223Z",
+  "updated": "2026-09-13T03:17:26.035Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6286,
+        "followers": 6285,
         "media_count": 542,
-        "views_30d": 21478,
-        "reach_28d": 3274,
-        "interactions_30d": 268,
-        "accounts_engaged_30d": 130,
-        "profile_views_30d": 702,
+        "views_30d": 21749,
+        "reach_28d": 3279,
+        "interactions_30d": 278,
+        "accounts_engaged_30d": 132,
+        "profile_views_30d": 694,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -64,11 +64,11 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 7729,
-            "interactions": 79,
-            "accounts_engaged": 27,
-            "profile_views": 238,
-            "followers": 6286
+            "views": 7861,
+            "interactions": 82,
+            "accounts_engaged": 28,
+            "profile_views": 243,
+            "followers": 6285
           },
           "2026-08": {
             "views": 17261,
@@ -104,10 +104,10 @@
         "username": "ridasaconstructora",
         "followers": 1413,
         "media_count": 680,
-        "views_30d": 15878,
-        "reach_28d": 4806,
-        "interactions_30d": 87,
-        "accounts_engaged_30d": 39,
+        "views_30d": 15415,
+        "reach_28d": 4816,
+        "interactions_30d": 91,
+        "accounts_engaged_30d": 38,
         "profile_views_30d": 82,
         "top_posts": [
           {
@@ -161,7 +161,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 4938,
+            "views": 4966,
             "interactions": 45,
             "accounts_engaged": 22,
             "profile_views": 23,
@@ -177,7 +177,7 @@
         }
       },
       "fb": {
-        "fans": 153,
+        "fans": 154,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
