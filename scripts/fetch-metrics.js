@@ -64,7 +64,7 @@ async function fetchClientMetrics(client, since30, until, tomorrow, existingData
     get(`/${IG_ID}`, '&fields=followers_count,media_count,username'),
     get(`/${IG_ID}/insights`, `&metric=views,accounts_engaged,total_interactions,profile_views&metric_type=total_value&period=day&since=${since30}&until=${until}`),
     get(`/${IG_ID}/insights`, `&metric=reach&period=days_28`),
-    get(`/${IG_ID}/media`,    '&fields=id,caption,media_type,like_count,comments_count,timestamp&limit=20'),
+    get(`/${IG_ID}/media`,    '&fields=id,caption,media_type,like_count,comments_count,video_views,timestamp&limit=20'),
   ]);
 
   const im = {};
@@ -83,6 +83,7 @@ async function fetchClientMetrics(client, since30, until, tomorrow, existingData
       caption: ((p.caption || '').split('\n')[0]).replace(/#\S+/g, '').trim().slice(0, 80),
       type: { VIDEO:'Video', IMAGE:'Imagen', CAROUSEL_ALBUM:'Carrusel' }[p.media_type] || 'Post',
       likes: p.like_count || 0, comments: p.comments_count || 0,
+      video_views: p.video_views || 0,
       total_interactions: (p.like_count||0) + (p.comments_count||0),
       timestamp: p.timestamp,
     }))
