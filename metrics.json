@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T17:44:24.563Z",
+  "updated": "2026-09-14T17:49:16.892Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -8,7 +8,7 @@
         "followers": 6283,
         "media_count": 543,
         "views_30d": 20742,
-        "reach_28d": 3245,
+        "reach_28d": 3250,
         "interactions_30d": 268,
         "accounts_engaged_30d": 128,
         "profile_views_30d": 682,
@@ -18,6 +18,7 @@
             "type": "Video",
             "likes": 54,
             "comments": 1,
+            "video_views": 0,
             "total_interactions": 55,
             "timestamp": "2026-08-19T18:28:22+0000"
           },
@@ -26,6 +27,7 @@
             "type": "Imagen",
             "likes": 20,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 20,
             "timestamp": "2026-06-08T15:17:54+0000"
           },
@@ -34,6 +36,7 @@
             "type": "Video",
             "likes": 18,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 18,
             "timestamp": "2026-08-14T15:14:23+0000"
           },
@@ -42,6 +45,7 @@
             "type": "Video",
             "likes": 18,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 18,
             "timestamp": "2026-08-05T14:32:55+0000"
           },
@@ -50,6 +54,7 @@
             "type": "Video",
             "likes": 18,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 18,
             "timestamp": "2026-08-01T15:12:12+0000"
           },
@@ -58,13 +63,14 @@
             "type": "Video",
             "likes": 16,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 16,
             "timestamp": "2026-07-19T15:25:59+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 8876,
+            "views": 8889,
             "interactions": 88,
             "accounts_engaged": 29,
             "profile_views": 276,
@@ -115,6 +121,7 @@
             "type": "Imagen",
             "likes": 6,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 6,
             "timestamp": "2026-08-17T15:00:12+0000"
           },
@@ -123,6 +130,7 @@
             "type": "Video",
             "likes": 6,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 6,
             "timestamp": "2026-07-18T17:11:57+0000"
           },
@@ -131,6 +139,7 @@
             "type": "Video",
             "likes": 5,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 5,
             "timestamp": "2026-08-27T16:50:58+0000"
           },
@@ -139,6 +148,7 @@
             "type": "Imagen",
             "likes": 4,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-04T15:00:11+0000"
           },
@@ -147,6 +157,7 @@
             "type": "Video",
             "likes": 4,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-01T13:38:06+0000"
           },
@@ -155,6 +166,7 @@
             "type": "Video",
             "likes": 4,
             "comments": 0,
+            "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-08-19T20:50:00+0000"
           }
