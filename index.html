@@ -449,15 +449,26 @@ const CLIENTS_CONFIG = {
       { lbl:'Búsqueda / Tags',   val:'17%', pct:17, color:'var(--rose)' },
     ],
     growth: [
-      { lbl:'Seguidores IG',     val:'1.4K', base:'Total actual',     color:'var(--acc)' },
-      { lbl:'Fans Facebook',     val:'152',  base:'Total actual',     color:'var(--warn)' },
-      { lbl:'Alcance IG',        val:'—',    base:'Acumulando datos', color:'var(--t3)' },
-      { lbl:'Interacciones IG',  val:'—',    base:'Acumulando datos', color:'var(--t3)' },
-      { lbl:'Visitas perfil',    val:'—',    base:'Acumulando datos', color:'var(--t3)' },
-      { lbl:'Clics enlace',      val:'—',    base:'Acumulando datos', color:'var(--t3)' },
+      { lbl:'Seguidores IG',      val:'1.4K', base:'Total actual',  color:'var(--acc)',    liveKey:'followers' },
+      { lbl:'Fans Facebook',      val:'152',  base:'Total actual',  color:'var(--warn)',   liveKey:'fb_fans' },
+      { lbl:'Visualizaciones IG', val:'—',    base:'30 días',       color:'var(--acc)',    liveKey:'views' },
+      { lbl:'Interacciones IG',   val:'—',    base:'30 días',       color:'var(--ok)',     liveKey:'interactions' },
+      { lbl:'Visitas perfil IG',  val:'—',    base:'30 días',       color:'var(--purple)', liveKey:'profileViews' },
+      { lbl:'Alcance IG',         val:'—',    base:'28 días',       color:'var(--rose)',   liveKey:'reach' },
     ],
   },
 };
+
+// Rellena growth items con datos live cuando el config tiene liveKey y el valor es '—'
+function buildGrowthItems(growth, live) {
+  if (!live) return growth;
+  return growth.map(g => {
+    if (!g.liveKey) return g;
+    const v = live[g.liveKey];
+    if (!v || v <= 0) return g;
+    return { ...g, val: fmt(v), color: g.color === 'var(--t3)' ? 'var(--acc)' : g.color };
+  });
+}
 
 // Genera plataformas dinámicamente desde LIVE cuando está disponible
 function buildPlatforms(live) {
@@ -544,7 +555,7 @@ function parseClientData(clientRaw, updated) {
     posts: (ig.top_posts || []).slice(0, 4).map(p => ({
       ttl:  p.caption || 'Publicación sin texto',
       type: `${{ Video:'🎬', Imagen:'🖼', Carrusel:'📂' }[p.type] || '📄'} ${p.type}`,
-      views: `❤️ ${p.likes}  💬 ${p.comments}`,
+      views: `❤️ ${p.likes}  ${p.video_views > 0 ? '👁 ' + fmt(p.video_views) + ' vistas' : '💬 ' + p.comments + ' com.'}`,
       int:   p.total_interactions,
     })),
     ig: { monthly: ig.monthly || {} },
@@ -767,7 +778,7 @@ function render() {
       <div class="card">
         <div class="card-ttl"><span>📈</span> Crecimiento acumulado 2026</div>
         <div class="g-grid">
-          ${cl.growth.map(g=>`
+          ${buildGrowthItems(cl.growth, LIVE).map(g=>`
             <div class="g-item">
               <div class="g-lbl">${g.lbl}</div>
               <div class="g-val" style="color:${g.color}">${g.val}</div>
@@ -781,7 +792,7 @@ function render() {
     <!-- Top Posts + Sources -->
     <div class="two">
       <div class="card">
-        <div class="card-ttl"><span>🏆</span> Top publicaciones por interacciones ${LIVE?'· <span style="color:var(--ok);font-weight:600;font-size:9px">● En vivo</span>':''}</div>
+        <div class="card-ttl"><span>🏆</span> Top publicaciones · Instagram ${LIVE?'· <span style="color:var(--ok);font-weight:600;font-size:9px">● En vivo · últimos posts</span>':''}</div>
         ${posts.map((p,i)=>`
           <div class="post">
             <div class="post-rank ${i===0?'g':''}">${i+1}</div>
