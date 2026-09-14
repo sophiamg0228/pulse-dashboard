@@ -432,12 +432,12 @@ const CLIENTS_CONFIG = {
       { lbl:'Búsqueda / Tags',   val:'22%', pct:22, color:'var(--rose)' },
     ],
     growth: [
-      { lbl:'Alcance IG',       val:'+105%', base:'vs año anterior', color:'var(--ok)' },
-      { lbl:'Interacciones IG', val:'+372%', base:'vs año anterior', color:'var(--ok)' },
-      { lbl:'Visualizaciones FB',val:'+82%', base:'vs año anterior', color:'var(--ok)' },
-      { lbl:'Interacciones FB', val:'+155%', base:'vs año anterior', color:'var(--ok)' },
-      { lbl:'Visitas perfil IG', val:'6.2K', base:'+8.9%',           color:'var(--acc)' },
-      { lbl:'Clics enlace IG',   val:'56',   base:'+100%',           color:'var(--acc)' },
+      { lbl:'Alcance IG',        val:'+105%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Interacciones IG',  val:'+372%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Visualizaciones FB', val:'+82%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Interacciones FB',  val:'+155%', base:'vs año anterior', color:'var(--ok)' },
+      { lbl:'Visitas perfil IG', val:'6.2K',  base:'+8.9%',           color:'var(--acc)' },
+      { lbl:'Clics enlace IG',   val:'56',    base:'+100%',           color:'var(--acc)' },
     ],
   },
   ridasa: {
@@ -449,15 +449,29 @@ const CLIENTS_CONFIG = {
       { lbl:'Búsqueda / Tags',   val:'17%', pct:17, color:'var(--rose)' },
     ],
     growth: [
-      { lbl:'Seguidores IG',     val:'1.4K', base:'Total actual',    color:'var(--acc)' },
-      { lbl:'Fans Facebook',     val:'152',  base:'Total actual',    color:'var(--warn)' },
-      { lbl:'Alcance IG',        val:'—',    base:'Acumulando datos',color:'var(--t3)' },
-      { lbl:'Interacciones IG',  val:'—',    base:'Acumulando datos',color:'var(--t3)' },
-      { lbl:'Visitas perfil',    val:'—',    base:'Acumulando datos',color:'var(--t3)' },
-      { lbl:'Clics enlace',      val:'—',    base:'Acumulando datos',color:'var(--t3)' },
+      { lbl:'Seguidores IG',     val:'1.4K', base:'Total actual',     color:'var(--acc)' },
+      { lbl:'Fans Facebook',     val:'152',  base:'Total actual',     color:'var(--warn)' },
+      { lbl:'Alcance IG',        val:'—',    base:'Acumulando datos', color:'var(--t3)' },
+      { lbl:'Interacciones IG',  val:'—',    base:'Acumulando datos', color:'var(--t3)' },
+      { lbl:'Visitas perfil',    val:'—',    base:'Acumulando datos', color:'var(--t3)' },
+      { lbl:'Clics enlace',      val:'—',    base:'Acumulando datos', color:'var(--t3)' },
     ],
   },
 };
+
+// Genera plataformas dinámicamente desde LIVE cuando está disponible
+function buildPlatforms(live) {
+  if (!live) return [];
+  const igViews = live.views || 0;
+  const fbImp   = live.fb_impressions || 0;
+  const total   = igViews + fbImp || 1;
+  return [
+    { name:'📸 Instagram', val:fmt(igViews), sub:'visualizaciones · 30 días', pct:Math.round(igViews/total*100), bar:'t', valColor:'var(--acc)' },
+    { name:'📘 Facebook',  val:fmt(fbImp > 0 ? fbImp : live.fb_fans), sub: fbImp > 0 ? 'impresiones · 30 días' : `fans totales`, pct:Math.round(fbImp/total*100)||2, bar:'o', valColor:'var(--warn)' },
+    { name:'Fans Facebook',   val:fmt(live.fb_fans||0), sub:'seguidores',   pct:5,  bar:'o', valColor:'var(--warn)' },
+    { name:'Seguidores IG',   val:fmt(live.followers||0), sub:'seguidores', pct:95, bar:'t', valColor:'var(--acc)' },
+  ];
+}
 
 // Fallback posts estáticos por cliente
 const STATIC_POSTS = {
@@ -645,7 +659,12 @@ function render() {
         { lbl:'Seguidores Instagram',       val:(LIVE.followers||0).toLocaleString('es-CO'), change:'Actual', type:'live', color:'var(--ok)', bar:'#4ADE80' },
       ];
     } else {
-      kpis = STATIC.kpis;
+      kpis = [
+        { lbl:'Visualizaciones totales', val:'—', change:'Sin datos', type:'neu', color:'var(--acc)',    bar:'#0DC5D4' },
+        { lbl:'Alcance Instagram',       val:'—', change:'Sin datos', type:'neu', color:'var(--purple)', bar:'#A78BFA' },
+        { lbl:'Interacciones IG',        val:'—', change:'Sin datos', type:'neu', color:'var(--rose)',   bar:'#FB7185' },
+        { lbl:'Seguidores Instagram',    val:'—', change:'Sin datos', type:'neu', color:'var(--ok)',     bar:'#4ADE80' },
+      ];
     }
   } else {
     // Facebook
@@ -725,8 +744,8 @@ function render() {
     <!-- Platforms + Growth -->
     <div class="two">
       <div class="card">
-        <div class="card-ttl"><span>📊</span> Plataformas ${LIVE?'· <span style="color:var(--t3);font-weight:400;font-size:9px">Contexto Ene–Sep 2026</span>':''}</div>
-        ${cl.platforms.slice(0,2).map(p=>`
+        <div class="card-ttl"><span>📊</span> Plataformas ${LIVE?'· <span style="color:var(--t3);font-weight:400;font-size:9px">Últimos 30 días</span>':''}</div>
+        ${buildPlatforms(LIVE).slice(0,2).map(p=>`
           <div class="plt">
             <div class="plt-hdr">
               <span class="plt-name">${p.name}</span>
@@ -736,7 +755,7 @@ function render() {
             <div class="plt-sub">${p.sub}</div>
           </div>`).join('')}
         <div style="border-top:1px solid var(--border-s);padding-top:13px;margin-top:4px;">
-          ${cl.platforms.slice(2).map(p=>`
+          ${buildPlatforms(LIVE).slice(2).map(p=>`
             <div class="plt-hdr" style="margin-bottom:5px">
               <span class="plt-name" style="font-size:11px;color:var(--t2)">${p.name}</span>
               <span style="font-size:12px;font-weight:700;font-family:'DM Mono',monospace;color:${p.valColor}">${p.val} <span style="font-size:10px;color:var(--t3);font-family:inherit;font-weight:400">${p.sub}</span></span>
@@ -802,23 +821,23 @@ function render() {
         </div>
         <div style="border-top:1px solid var(--border-s);padding-top:13px;">
           <div class="plt-hdr" style="margin-bottom:5px">
-            <span style="font-size:11px;color:var(--t2)">Espectadores Facebook</span>
-            <span style="font-size:12px;font-weight:700;font-family:'DM Mono',monospace;color:var(--warn)">${cl.fbExtras.espectadores}</span>
+            <span style="font-size:11px;color:var(--t2)">Fans Facebook</span>
+            <span style="font-size:12px;font-weight:700;font-family:'DM Mono',monospace;color:var(--warn)">${fmt(LIVE?.fb_fans || 0)}</span>
           </div>
-          <div class="track" style="margin-bottom:10px"><div class="bar o" style="width:30%"></div></div>
+          <div class="track" style="margin-bottom:10px"><div class="bar o" style="width:${Math.min(100, Math.round((LIVE?.fb_fans||0)/((LIVE?.fb_fans||0)+(LIVE?.followers||1))*100))}%"></div></div>
           <div class="plt-hdr" style="margin-bottom:5px">
-            <span style="font-size:11px;color:var(--t2)">Tiempo reproducción FB</span>
-            <span style="font-size:12px;font-weight:700;font-family:'DM Mono',monospace;color:var(--ok)">${cl.fbExtras.tiempo}</span>
+            <span style="font-size:11px;color:var(--t2)">Alcance Facebook · 30d</span>
+            <span style="font-size:12px;font-weight:700;font-family:'DM Mono',monospace;color:var(--ok)">${LIVE?.fb_reach > 0 ? fmt(LIVE.fb_reach) : '—'}</span>
           </div>
-          <div class="track"><div class="bar g" style="width:${cl.fbExtras.tiempoPct}%"></div></div>
-          <div class="plt-sub">${cl.fbExtras.tiempoChange} vs año anterior</div>
+          <div class="track"><div class="bar g" style="width:${LIVE?.fb_reach > 0 ? Math.min(100, Math.round(LIVE.fb_reach/(LIVE.views||1)*100)) : 0}%"></div></div>
+          <div class="plt-sub">Impresiones: ${LIVE?.fb_impressions > 0 ? fmt(LIVE.fb_impressions) : '—'}</div>
         </div>
       </div>
     </div>
 
     <!-- Insight -->
     <div class="insight">
-      <div class="insight-ttl">💡 Conclusión clave · Odontoclave</div>
+      <div class="insight-ttl">💡 Conclusión clave · ${cl.name}</div>
       <div class="insight-body">${cl.insight}</div>
     </div>
     `}
