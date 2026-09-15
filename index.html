@@ -383,7 +383,7 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
     <div class="nav-item active" data-tab="redes"><span class="nav-ico">📱</span>Redes sociales</div>
     <div class="nav-item" data-tab="seo"><span class="nav-ico">🔍</span>SEO &amp; posicionamiento</div>
     <div class="nav-item" data-tab="articulos"><span class="nav-ico">📝</span>Artículos</div>
-    <div class="nav-item" data-tab="pauta"><span class="nav-ico">📣</span>Pauta activa<span class="nav-badge">Pronto</span></div>
+    <div class="nav-item" data-tab="pauta"><span class="nav-ico">📣</span>Pauta activa</div>
   </div>
 
   <div class="sb-bottom">
@@ -409,7 +409,7 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
     <div class="tab active" data-tab="redes">Redes sociales</div>
     <div class="tab" data-tab="seo">SEO</div>
     <div class="tab" data-tab="articulos">Artículos</div>
-    <div class="tab" data-tab="pauta">Pauta <span class="tab-pill">Pronto</span></div>
+    <div class="tab" data-tab="pauta">Pauta</div>
   </div>
 
   <div class="content" id="content"></div>
@@ -420,7 +420,8 @@ body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);c
 
 <script>
 // ── CONFIG ────────────────────────────────────────────
-const METRICS_URL = './metrics.json';
+const METRICS_URL     = './metrics.json';
+const ADS_METRICS_URL = './ads-metrics.json';
 
 const CLIENTS_CONFIG = {
   odontoclave: {
@@ -520,6 +521,8 @@ let currentTab = 'redes';
 let currentMonth = 'all';
 let currentPlatform = 'ig';
 let currentClient = 'odontoclave';
+let currentAdsPeriod = 'last_30d';
+let ADS_DATA = null;
 let refreshTimer = null;
 
 // ── UTILS ─────────────────────────────────────────────
@@ -604,12 +607,13 @@ function sparkline(pts, color='#0DC5D4') {
 function render() {
   const c = document.getElementById('content');
 
+  if (currentTab === 'pauta') { renderPauta(); return; }
+
   if (currentTab !== 'redes') {
     const info = {
       seo:{ ttl:'SEO & Posicionamiento', sub:'Posicionamiento en Google, palabras clave y tráfico orgánico.' },
       articulos:{ ttl:'Artículos del blog', sub:'Visitas, tiempo en página y rendimiento de cada publicación.' },
-      pauta:{ ttl:'Pauta activa', sub:'Impresiones, CPC, ROAS y resultados de campañas activas.' },
-    }[currentTab];
+    }[currentTab] || { ttl: currentTab, sub: '' };
     c.innerHTML = `<div class="cs"><div class="cs-ico">🚧</div><div class="cs-ttl">${info.ttl}</div><div class="cs-sub">${info.sub}<br><br>Se habilita próximamente.</div></div>`;
     return;
   }
@@ -874,10 +878,160 @@ function updateSidebar() {
   document.querySelector('.tb-name').textContent = CLIENTS_CONFIG[currentClient]?.name || currentClient;
 }
 
+// ── ADS DATA ──────────────────────────────────────────
+async function fetchAdsData() {
+  try {
+    const data = await fetch(ADS_METRICS_URL + '?t=' + Date.now()).then(r => r.json());
+    ADS_DATA = data;
+  } catch(e) { console.warn('ads-metrics.json no disponible:', e.message); }
+}
+
+function fmtMoney(v, currency) {
+  if (!v && v !== 0) return '—';
+  return currency === 'USD'
+    ? '$' + v.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})
+    : '$' + Math.round(v).toLocaleString('es-CO');
+}
+
+function renderPauta() {
+  const c = document.getElementById('content');
+  const updated = ADS_DATA?.updated ? `Actualizado ${timeAgo(ADS_DATA.updated)}` : '';
+
+  if (!ADS_DATA) {
+    c.innerHTML = `<div style="padding:32px;text-align:center;color:var(--t3)">
+      <div style="font-size:32px;margin-bottom:12px">📡</div>
+      <div style="font-weight:700;color:var(--t1)">Cargando datos de pauta...</div>
+      <div style="font-size:12px;margin-top:6px">Conectando con Meta Ads API</div>
+    </div>`;
+    fetchAdsData().then(() => { if (ADS_DATA) renderPauta(); });
+    return;
+  }
+
+  const clients = ADS_DATA.clients || {};
+  const p = currentAdsPeriod;
+
+  // Totales COP
+  const copClients = ['novacell', 'avignon'].filter(id => clients[id]?.[p]);
+  const totalCOP    = copClients.reduce((s, id) => s + (clients[id][p]?.spend || 0), 0);
+  const totalConvCOP = copClients.reduce((s, id) => s + (clients[id][p]?.conversations || 0), 0);
+  const totalImpCOP  = copClients.reduce((s, id) => s + (clients[id][p]?.impressions || 0), 0);
+
+  // Mizuderma USD
+  const mizu = clients.mizuderma?.[p];
+
+  const periodLabel = p === 'last_30d' ? 'Últimos 30 días' : 'Acumulado total';
+
+  // Cards por cliente
+  const clientCards = [
+    { id:'novacell', color:'var(--acc)',    icon:'📱', obj:'Conversaciones WhatsApp', metricLbl:'Costo/conv' },
+    { id:'avignon',  color:'var(--purple)', icon:'🏬', obj:'Reconocimiento',           metricLbl:'CPM' },
+    { id:'mizuderma',color:'var(--ok)',     icon:'✨', obj:'Leads WhatsApp (Miami)',    metricLbl:'Costo/conv' },
+  ].map(cfg => {
+    const cl = clients[cfg.id];
+    if (!cl) return '';
+    const d  = cl[p];
+    const campaigns = (cl.campaigns || []).filter(cam => cam.status === 'ACTIVE');
+    const spend = d?.spend;
+    const conv  = d?.conversations;
+    const cpc   = d?.cpc;
+    const cpm   = d?.cpm;
+    const cpa   = d?.cost_per_conversation;
+    const bench = cl.benchmark;
+    const isGood = bench && cpa && cpa <= bench;
+    const mainMetricVal = cfg.id === 'avignon'
+      ? fmtMoney(cpm, cl.currency)
+      : (cpa ? fmtMoney(cpa, cl.currency) : '—');
+    const mainMetricColor = cfg.id === 'avignon'
+      ? (cpm && cpm < 1500 ? 'var(--ok)' : 'var(--warn)')
+      : (isGood ? 'var(--ok)' : cpa ? 'var(--warn)' : 'var(--t3)');
+    return `
+    <div class="card" style="border-top:3px solid ${cfg.color}">
+      <div class="card-ttl"><span>${cfg.icon}</span> ${cl.name}
+        <span style="margin-left:auto;font-size:10px;font-weight:500;color:var(--t3);background:var(--bg-s);padding:2px 8px;border-radius:20px">${cl.currency}</span>
+      </div>
+      <div style="font-size:11px;color:var(--t3);margin-bottom:14px">${cfg.obj}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+        <div style="background:var(--bg-s);border-radius:10px;padding:12px">
+          <div style="font-size:10px;color:var(--t3);margin-bottom:4px">Invertido</div>
+          <div style="font-size:18px;font-weight:800;font-family:'DM Mono',monospace;color:${cfg.color}">${fmtMoney(spend, cl.currency)}</div>
+        </div>
+        <div style="background:var(--bg-s);border-radius:10px;padding:12px">
+          <div style="font-size:10px;color:var(--t3);margin-bottom:4px">${cfg.id === 'avignon' ? 'Impresiones' : 'Conversaciones'}</div>
+          <div style="font-size:18px;font-weight:800;font-family:'DM Mono',monospace;color:var(--t1)">${cfg.id === 'avignon' ? fmt(d?.impressions||0) : (conv||0)}</div>
+        </div>
+        <div style="background:var(--bg-s);border-radius:10px;padding:12px">
+          <div style="font-size:10px;color:var(--t3);margin-bottom:4px">CPC</div>
+          <div style="font-size:16px;font-weight:700;font-family:'DM Mono',monospace;color:var(--t2)">${fmtMoney(cpc, cl.currency)}</div>
+        </div>
+        <div style="background:var(--bg-s);border-radius:10px;padding:12px">
+          <div style="font-size:10px;color:var(--t3);margin-bottom:4px">${cfg.metricLbl}${bench ? ` <span style="color:var(--t3)">(meta: ${fmtMoney(bench, cl.currency)})</span>` : ''}</div>
+          <div style="font-size:16px;font-weight:700;font-family:'DM Mono',monospace;color:${mainMetricColor}">${mainMetricVal}</div>
+        </div>
+      </div>
+      ${campaigns.length > 0 ? `
+      <div style="border-top:1px solid var(--border-s);padding-top:10px">
+        <div style="font-size:10px;color:var(--t3);margin-bottom:6px;font-weight:600;letter-spacing:.05em;text-transform:uppercase">Campañas activas</div>
+        ${campaigns.map(cam => `
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--border-s)">
+            <span style="font-size:11px;color:var(--t2)">${cam.name}</span>
+            <span style="font-size:10px;background:rgba(74,222,128,.12);color:var(--ok);padding:2px 7px;border-radius:20px;font-weight:600">ACTIVA</span>
+          </div>`).join('')}
+      </div>` : '<div style="font-size:11px;color:var(--t3);text-align:center;padding:8px 0">Sin campañas activas en este período</div>'}
+    </div>`;
+  }).join('');
+
+  c.innerHTML = `
+    <div class="live-banner"><span class="live-dot"></span>Meta Ads · ${periodLabel} · ${updated}</div>
+
+    <!-- Resumen global COP -->
+    <div class="kpi-row" style="margin-bottom:10px">
+      <div class="kpi">
+        <div class="kpi-stripe" style="background:var(--acc)"></div>
+        <div class="kpi-lbl">Total invertido · COP</div>
+        <div class="kpi-val" style="color:var(--acc)">${fmtMoney(totalCOP,'COP')}</div>
+        <span class="chip live">Novacell + Avignon</span>
+      </div>
+      <div class="kpi">
+        <div class="kpi-stripe" style="background:var(--ok)"></div>
+        <div class="kpi-lbl">Conversaciones · COP</div>
+        <div class="kpi-val" style="color:var(--ok)">${totalConvCOP}</div>
+        <span class="chip live">WhatsApp</span>
+      </div>
+      <div class="kpi">
+        <div class="kpi-stripe" style="background:var(--purple)"></div>
+        <div class="kpi-lbl">Impresiones · COP</div>
+        <div class="kpi-val" style="color:var(--purple)">${fmt(totalImpCOP)}</div>
+        <span class="chip live">Acumulado</span>
+      </div>
+      <div class="kpi">
+        <div class="kpi-stripe" style="background:var(--ok)"></div>
+        <div class="kpi-lbl">Total invertido · USD</div>
+        <div class="kpi-val" style="color:var(--ok)">${fmtMoney(mizu?.spend,'USD')}</div>
+        <span class="chip live">Mizuderma</span>
+      </div>
+    </div>
+
+    <!-- Período toggle -->
+    <div style="display:flex;gap:8px;margin-bottom:18px;align-items:center">
+      <span style="font-size:11px;color:var(--t3);font-weight:600">PERÍODO</span>
+      ${['last_30d','accumulated'].map(per => `
+        <button onclick="currentAdsPeriod='${per}';renderPauta()"
+          style="padding:5px 14px;border-radius:20px;border:1.5px solid ${currentAdsPeriod===per?'var(--acc)':'var(--border)'};background:${currentAdsPeriod===per?'var(--acc)':'transparent'};color:${currentAdsPeriod===per?'#fff':'var(--t2)'};font-size:12px;font-weight:600;cursor:pointer">
+          ${per==='last_30d'?'Últimos 30 días':'Acumulado'}
+        </button>`).join('')}
+    </div>
+
+    <!-- Cards por cliente -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+      ${clientCards}
+    </div>
+  `;
+}
+
 // ── LOAD & AUTO-REFRESH ───────────────────────────────
 async function loadData() {
   try {
-    await fetchLiveData();
+    await Promise.all([fetchLiveData(), fetchAdsData()]);
     updateSidebar();
     render();
     // Actualizar "hace X min" cada minuto
