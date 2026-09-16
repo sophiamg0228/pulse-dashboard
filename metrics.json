@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T01:06:43.329Z",
+  "updated": "2026-09-16T07:15:31.288Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6284,
         "media_count": 543,
-        "views_30d": 21209,
-        "reach_28d": 3289,
-        "interactions_30d": 269,
-        "accounts_engaged_30d": 125,
-        "profile_views_30d": 703,
+        "views_30d": 21349,
+        "reach_28d": 2745,
+        "interactions_30d": 273,
+        "accounts_engaged_30d": 127,
+        "profile_views_30d": 707,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -70,10 +70,10 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 10210,
-            "interactions": 95,
-            "accounts_engaged": 30,
-            "profile_views": 320,
+            "views": 10350,
+            "interactions": 99,
+            "accounts_engaged": 32,
+            "profile_views": 324,
             "followers": 6284
           },
           "2026-08": {
@@ -86,7 +86,7 @@
         }
       },
       "fb": {
-        "fans": 7187,
+        "fans": 7186,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
@@ -110,11 +110,11 @@
         "username": "ridasaconstructora",
         "followers": 1412,
         "media_count": 681,
-        "views_30d": 14979,
-        "reach_28d": 4880,
+        "views_30d": 15066,
+        "reach_28d": 4460,
         "interactions_30d": 99,
         "accounts_engaged_30d": 42,
-        "profile_views_30d": 84,
+        "profile_views_30d": 85,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima",
@@ -173,10 +173,10 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 6062,
+            "views": 6149,
             "interactions": 55,
             "accounts_engaged": 28,
-            "profile_views": 29,
+            "profile_views": 30,
             "followers": 1412
           },
           "2026-08": {
