@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T22:48:29.321Z",
+  "updated": "2026-09-18T01:02:40.225Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6284,
         "media_count": 543,
-        "views_30d": 21612,
-        "reach_28d": 2019,
-        "interactions_30d": 274,
-        "accounts_engaged_30d": 128,
-        "profile_views_30d": 714,
+        "views_30d": 21383,
+        "reach_28d": 2025,
+        "interactions_30d": 269,
+        "accounts_engaged_30d": 127,
+        "profile_views_30d": 690,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -70,7 +70,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 11737,
+            "views": 11769,
             "interactions": 111,
             "accounts_engaged": 34,
             "profile_views": 364,
@@ -110,11 +110,11 @@
         "username": "ridasaconstructora",
         "followers": 1411,
         "media_count": 681,
-        "views_30d": 15030,
-        "reach_28d": 4626,
-        "interactions_30d": 96,
-        "accounts_engaged_30d": 42,
-        "profile_views_30d": 84,
+        "views_30d": 14846,
+        "reach_28d": 4635,
+        "interactions_30d": 94,
+        "accounts_engaged_30d": 41,
+        "profile_views_30d": 79,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima",
@@ -173,7 +173,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 7171,
+            "views": 7197,
             "interactions": 56,
             "accounts_engaged": 29,
             "profile_views": 33,
