@@ -1,14 +1,14 @@
 {
-  "updated": "2026-09-18T12:43:41.289Z",
+  "updated": "2026-09-18T16:56:54.403Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6284,
-        "media_count": 543,
+        "followers": 6285,
+        "media_count": 544,
         "views_30d": 21430,
-        "reach_28d": 1980,
+        "reach_28d": 1985,
         "interactions_30d": 269,
         "accounts_engaged_30d": 127,
         "profile_views_30d": 695,
@@ -21,15 +21,6 @@
             "video_views": 0,
             "total_interactions": 55,
             "timestamp": "2026-08-19T18:28:22+0000"
-          },
-          {
-            "caption": "Detrás de cada sonrisa transformada, hay personas que se formaron para cuidarla ",
-            "type": "Imagen",
-            "likes": 20,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 20,
-            "timestamp": "2026-06-08T15:17:54+0000"
           },
           {
             "caption": "No esperes a que duela 🦷",
@@ -66,15 +57,24 @@
             "video_views": 0,
             "total_interactions": 16,
             "timestamp": "2026-07-19T15:25:59+0000"
+          },
+          {
+            "caption": "¿Que estás esperando para tener tu sonrisa soñada ? 🦷. Agenda hoy tu cita en cu",
+            "type": "Video",
+            "likes": 15,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 15,
+            "timestamp": "2026-06-23T16:46:57+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 11844,
-            "interactions": 111,
+            "views": 12075,
+            "interactions": 113,
             "accounts_engaged": 34,
-            "profile_views": 370,
-            "followers": 6284
+            "profile_views": 375,
+            "followers": 6285
           },
           "2026-08": {
             "views": 17261,
@@ -108,10 +108,10 @@
       "name": "Ridasa Constructora",
       "ig": {
         "username": "ridasaconstructora",
-        "followers": 1410,
+        "followers": 1411,
         "media_count": 681,
         "views_30d": 14896,
-        "reach_28d": 4588,
+        "reach_28d": 4626,
         "interactions_30d": 94,
         "accounts_engaged_30d": 41,
         "profile_views_30d": 80,
@@ -173,11 +173,11 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 7278,
+            "views": 7392,
             "interactions": 56,
             "accounts_engaged": 29,
-            "profile_views": 34,
-            "followers": 1410
+            "profile_views": 35,
+            "followers": 1411
           },
           "2026-08": {
             "views": 13390,
