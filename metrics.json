@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T06:09:06.115Z",
+  "updated": "2026-09-21T13:38:04.296Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,8 +7,8 @@
         "username": "odontoclave",
         "followers": 6282,
         "media_count": 545,
-        "views_30d": 20595,
-        "reach_28d": 1969,
+        "views_30d": 20597,
+        "reach_28d": 1956,
         "interactions_30d": 167,
         "accounts_engaged_30d": 56,
         "profile_views_30d": 668,
@@ -70,10 +70,10 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 14317,
+            "views": 14376,
             "interactions": 123,
             "accounts_engaged": 38,
-            "profile_views": 415,
+            "profile_views": 418,
             "followers": 6282
           },
           "2026-08": {
@@ -110,9 +110,9 @@
         "username": "ridasaconstructora",
         "followers": 1412,
         "media_count": 683,
-        "views_30d": 13562,
-        "reach_28d": 4704,
-        "interactions_30d": 91,
+        "views_30d": 13563,
+        "reach_28d": 4588,
+        "interactions_30d": 92,
         "accounts_engaged_30d": 43,
         "profile_views_30d": 74,
         "top_posts": [
@@ -144,6 +144,15 @@
             "timestamp": "2026-08-27T16:50:58+0000"
           },
           {
+            "caption": "📍Alvarado Tolima",
+            "type": "Video",
+            "likes": 3,
+            "comments": 1,
+            "video_views": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-09-18T19:12:59+0000"
+          },
+          {
             "caption": "📍 Alvarado, Tolima",
             "type": "Imagen",
             "likes": 4,
@@ -160,21 +169,12 @@
             "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-01T13:38:06+0000"
-          },
-          {
-            "caption": "📍 Lotes en Alvarado, Tolima",
-            "type": "Video",
-            "likes": 4,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 4,
-            "timestamp": "2026-08-19T20:50:00+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 8603,
-            "interactions": 65,
+            "views": 8630,
+            "interactions": 66,
             "accounts_engaged": 33,
             "profile_views": 39,
             "followers": 1412
