@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T21:46:43.501Z",
+  "updated": "2026-09-22T23:59:43.318Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -8,7 +8,7 @@
         "followers": 6283,
         "media_count": 546,
         "views_30d": 20908,
-        "reach_28d": 1977,
+        "reach_28d": 1985,
         "interactions_30d": 164,
         "accounts_engaged_30d": 55,
         "profile_views_30d": 687,
@@ -70,10 +70,10 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 15561,
-            "interactions": 131,
+            "views": 15653,
+            "interactions": 132,
             "accounts_engaged": 41,
-            "profile_views": 461,
+            "profile_views": 464,
             "followers": 6283
           },
           "2026-08": {
@@ -144,6 +144,15 @@
             "timestamp": "2026-08-27T16:50:58+0000"
           },
           {
+            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "type": "Imagen",
+            "likes": 4,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-09-19T16:48:40+0000"
+          },
+          {
             "caption": "📍Alvarado Tolima",
             "type": "Video",
             "likes": 3,
@@ -160,22 +169,13 @@
             "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-04T15:00:11+0000"
-          },
-          {
-            "caption": "📍 Alvarado, Tolima — Molino Country Club",
-            "type": "Video",
-            "likes": 4,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 4,
-            "timestamp": "2026-09-01T13:38:06+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 9490,
-            "interactions": 68,
-            "accounts_engaged": 34,
+            "views": 9567,
+            "interactions": 71,
+            "accounts_engaged": 36,
             "profile_views": 45,
             "followers": 1413
           },
