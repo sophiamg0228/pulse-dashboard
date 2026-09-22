@@ -1,14 +1,14 @@
 {
-  "updated": "2026-09-22T14:20:44.838Z",
+  "updated": "2026-09-22T18:30:17.371Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6285,
-        "media_count": 545,
+        "followers": 6284,
+        "media_count": 546,
         "views_30d": 20908,
-        "reach_28d": 1953,
+        "reach_28d": 1969,
         "interactions_30d": 164,
         "accounts_engaged_30d": 55,
         "profile_views_30d": 687,
@@ -59,22 +59,22 @@
             "timestamp": "2026-07-19T15:25:59+0000"
           },
           {
-            "caption": "¿Que estás esperando para tener tu sonrisa soñada ? 🦷. Agenda hoy tu cita en cu",
+            "caption": "¿Ya agendaste tu cita ? 👀 te esperamos en nuestras sedes 📍CC mayorca 📍CC fabr",
             "type": "Video",
-            "likes": 15,
+            "likes": 14,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 15,
-            "timestamp": "2026-06-23T16:46:57+0000"
+            "total_interactions": 14,
+            "timestamp": "2026-07-16T00:45:42+0000"
           }
         ],
         "monthly": {
           "2026-09": {
-            "views": 15233,
-            "interactions": 126,
-            "accounts_engaged": 40,
-            "profile_views": 450,
-            "followers": 6285
+            "views": 15443,
+            "interactions": 131,
+            "accounts_engaged": 41,
+            "profile_views": 456,
+            "followers": 6284
           },
           "2026-08": {
             "views": 17261,
@@ -111,7 +111,7 @@
         "followers": 1412,
         "media_count": 683,
         "views_30d": 13538,
-        "reach_28d": 4523,
+        "reach_28d": 4541,
         "interactions_30d": 88,
         "accounts_engaged_30d": 41,
         "profile_views_30d": 70,
@@ -173,7 +173,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 9279,
+            "views": 9373,
             "interactions": 67,
             "accounts_engaged": 33,
             "profile_views": 42,
