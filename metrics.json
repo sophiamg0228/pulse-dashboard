@@ -1,25 +1,25 @@
 {
-  "updated": "2026-09-24T01:05:42.268Z",
+  "updated": "2026-09-24T07:13:12.499Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6281,
+        "followers": 6282,
         "media_count": 546,
-        "views_30d": 21040,
-        "reach_28d": 1890,
-        "interactions_30d": 165,
-        "accounts_engaged_30d": 54,
-        "profile_views_30d": 670,
+        "views_30d": 21333,
+        "reach_28d": 1833,
+        "interactions_30d": 166,
+        "accounts_engaged_30d": 55,
+        "profile_views_30d": 675,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
             "type": "Video",
-            "likes": 54,
+            "likes": 55,
             "comments": 1,
             "video_views": 0,
-            "total_interactions": 55,
+            "total_interactions": 56,
             "timestamp": "2026-08-19T18:28:22+0000"
           },
           {
@@ -70,11 +70,11 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 16247,
-            "interactions": 134,
-            "accounts_engaged": 41,
-            "profile_views": 487,
-            "followers": 6281
+            "views": 16540,
+            "interactions": 135,
+            "accounts_engaged": 42,
+            "profile_views": 492,
+            "followers": 6282
           },
           "2026-08": {
             "views": 17261,
@@ -110,8 +110,8 @@
         "username": "ridasaconstructora",
         "followers": 1413,
         "media_count": 683,
-        "views_30d": 13687,
-        "reach_28d": 4578,
+        "views_30d": 13759,
+        "reach_28d": 4408,
         "interactions_30d": 88,
         "accounts_engaged_30d": 42,
         "profile_views_30d": 69,
@@ -173,7 +173,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 10201,
+            "views": 10273,
             "interactions": 73,
             "accounts_engaged": 37,
             "profile_views": 48,
