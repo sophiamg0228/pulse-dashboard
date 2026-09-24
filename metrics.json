@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T18:12:17.372Z",
+  "updated": "2026-09-24T21:58:16.386Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -8,7 +8,7 @@
         "followers": 6284,
         "media_count": 546,
         "views_30d": 21340,
-        "reach_28d": 1845,
+        "reach_28d": 1850,
         "interactions_30d": 166,
         "accounts_engaged_30d": 55,
         "profile_views_30d": 676,
@@ -70,10 +70,10 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 16947,
-            "interactions": 135,
+            "views": 17173,
+            "interactions": 137,
             "accounts_engaged": 42,
-            "profile_views": 506,
+            "profile_views": 510,
             "followers": 6284
           },
           "2026-08": {
@@ -111,7 +111,7 @@
         "followers": 1410,
         "media_count": 683,
         "views_30d": 13759,
-        "reach_28d": 4443,
+        "reach_28d": 4487,
         "interactions_30d": 88,
         "accounts_engaged_30d": 42,
         "profile_views_30d": 69,
@@ -173,7 +173,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 10458,
+            "views": 10575,
             "interactions": 73,
             "accounts_engaged": 37,
             "profile_views": 48,
