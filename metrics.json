@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T03:38:36.154Z",
+  "updated": "2026-09-26T09:07:46.976Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,8 +7,8 @@
         "username": "odontoclave",
         "followers": 6284,
         "media_count": 546,
-        "views_30d": 20768,
-        "reach_28d": 1860,
+        "views_30d": 20785,
+        "reach_28d": 1847,
         "interactions_30d": 159,
         "accounts_engaged_30d": 49,
         "profile_views_30d": 645,
@@ -70,7 +70,7 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 18189,
+            "views": 18207,
             "interactions": 141,
             "accounts_engaged": 43,
             "profile_views": 535,
@@ -86,7 +86,7 @@
         }
       },
       "fb": {
-        "fans": 7187,
+        "fans": 7186,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
@@ -110,11 +110,11 @@
         "username": "ridasaconstructora",
         "followers": 1411,
         "media_count": 683,
-        "views_30d": 13563,
-        "reach_28d": 4569,
-        "interactions_30d": 85,
-        "accounts_engaged_30d": 41,
-        "profile_views_30d": 66,
+        "views_30d": 13698,
+        "reach_28d": 4478,
+        "interactions_30d": 101,
+        "accounts_engaged_30d": 42,
+        "profile_views_30d": 67,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima",
@@ -173,10 +173,10 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 11152,
-            "interactions": 73,
-            "accounts_engaged": 37,
-            "profile_views": 50,
+            "views": 11289,
+            "interactions": 89,
+            "accounts_engaged": 38,
+            "profile_views": 51,
             "followers": 1411
           },
           "2026-08": {
