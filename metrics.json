@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-30T08:00:54.786Z",
+  "updated": "2026-09-30T15:38:04.524Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6287,
+        "followers": 6289,
         "media_count": 546,
         "views_30d": 22077,
         "reach_28d": 1825,
@@ -70,11 +70,11 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 21511,
+            "views": 21716,
             "interactions": 158,
             "accounts_engaged": 48,
-            "profile_views": 607,
-            "followers": 6287
+            "profile_views": 613,
+            "followers": 6289
           },
           "2026-08": {
             "views": 17261,
@@ -111,7 +111,7 @@
         "followers": 1413,
         "media_count": 684,
         "views_30d": 13784,
-        "reach_28d": 4374,
+        "reach_28d": 4487,
         "interactions_30d": 112,
         "accounts_engaged_30d": 46,
         "profile_views_30d": 62,
@@ -126,6 +126,15 @@
             "timestamp": "2026-08-17T15:00:12+0000"
           },
           {
+            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "type": "Imagen",
+            "likes": 5,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 5,
+            "timestamp": "2026-09-30T01:00:17+0000"
+          },
+          {
             "caption": "📍 Alvarado, Tolima",
             "type": "Video",
             "likes": 5,
@@ -133,15 +142,6 @@
             "video_views": 0,
             "total_interactions": 5,
             "timestamp": "2026-08-27T16:50:58+0000"
-          },
-          {
-            "caption": "📍 Alvarado, Tolima — Molino Country Club",
-            "type": "Imagen",
-            "likes": 4,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 4,
-            "timestamp": "2026-09-30T01:00:17+0000"
           },
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -173,9 +173,9 @@
         ],
         "monthly": {
           "2026-09": {
-            "views": 13147,
-            "interactions": 109,
-            "accounts_engaged": 45,
+            "views": 13317,
+            "interactions": 112,
+            "accounts_engaged": 46,
             "profile_views": 59,
             "followers": 1413
           },
