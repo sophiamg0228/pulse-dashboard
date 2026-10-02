@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-02T13:34:22.165Z",
+  "updated": "2026-10-02T18:58:26.005Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6292,
-        "media_count": 546,
+        "followers": 6290,
+        "media_count": 547,
         "views_30d": 22719,
-        "reach_28d": 1677,
+        "reach_28d": 1691,
         "interactions_30d": 163,
         "accounts_engaged_30d": 50,
         "profile_views_30d": 633,
@@ -59,13 +59,13 @@
             "timestamp": "2026-07-19T15:25:59+0000"
           },
           {
-            "caption": "¿Ya agendaste tu cita ? 👀 te esperamos en nuestras sedes 📍CC mayorca 📍CC fabr",
+            "caption": "¿Ya conoces nuestra sede mayorca? 😁 no esperes más y agenda ya tu cita en le li",
             "type": "Video",
-            "likes": 14,
+            "likes": 13,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 14,
-            "timestamp": "2026-07-16T00:45:42+0000"
+            "total_interactions": 13,
+            "timestamp": "2026-07-22T16:52:47+0000"
           }
         ],
         "monthly": {
@@ -84,11 +84,11 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 1326,
-            "interactions": 9,
-            "accounts_engaged": 7,
-            "profile_views": 39,
-            "followers": 6292
+            "views": 1704,
+            "interactions": 11,
+            "accounts_engaged": 8,
+            "profile_views": 54,
+            "followers": 6290
           }
         }
       },
@@ -120,14 +120,23 @@
       "name": "Ridasa Constructora",
       "ig": {
         "username": "ridasaconstructora",
-        "followers": 1413,
+        "followers": 1414,
         "media_count": 684,
         "views_30d": 13662,
-        "reach_28d": 4635,
+        "reach_28d": 4724,
         "interactions_30d": 106,
         "accounts_engaged_30d": 46,
         "profile_views_30d": 58,
         "top_posts": [
+          {
+            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "type": "Imagen",
+            "likes": 6,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 6,
+            "timestamp": "2026-09-30T01:00:17+0000"
+          },
           {
             "caption": "📍 Alvarado, Tolima",
             "type": "Imagen",
@@ -136,15 +145,6 @@
             "video_views": 0,
             "total_interactions": 6,
             "timestamp": "2026-08-17T15:00:12+0000"
-          },
-          {
-            "caption": "📍 Alvarado, Tolima — Molino Country Club",
-            "type": "Imagen",
-            "likes": 5,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 5,
-            "timestamp": "2026-09-30T01:00:17+0000"
           },
           {
             "caption": "📍 Alvarado, Tolima",
@@ -199,16 +199,16 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 796,
-            "interactions": 1,
-            "accounts_engaged": 1,
-            "profile_views": 2,
-            "followers": 1413
+            "views": 1025,
+            "interactions": 3,
+            "accounts_engaged": 3,
+            "profile_views": 3,
+            "followers": 1414
           }
         }
       },
       "fb": {
-        "fans": 157,
+        "fans": 158,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
