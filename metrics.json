@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T23:30:52.548Z",
+  "updated": "2026-10-04T04:24:32.696Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6291,
         "media_count": 547,
-        "views_30d": 23060,
-        "reach_28d": 1709,
-        "interactions_30d": 168,
-        "accounts_engaged_30d": 50,
-        "profile_views_30d": 640,
+        "views_30d": 22766,
+        "reach_28d": 1714,
+        "interactions_30d": 165,
+        "accounts_engaged_30d": 48,
+        "profile_views_30d": 638,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,10 +84,10 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 2799,
+            "views": 2971,
             "interactions": 23,
             "accounts_engaged": 10,
-            "profile_views": 81,
+            "profile_views": 85,
             "followers": 6291
           }
         }
@@ -122,11 +122,11 @@
         "username": "ridasaconstructora",
         "followers": 1414,
         "media_count": 685,
-        "views_30d": 14273,
-        "reach_28d": 5554,
+        "views_30d": 14811,
+        "reach_28d": 5665,
         "interactions_30d": 107,
-        "accounts_engaged_30d": 47,
-        "profile_views_30d": 59,
+        "accounts_engaged_30d": 46,
+        "profile_views_30d": 58,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -199,10 +199,10 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 2376,
-            "interactions": 5,
-            "accounts_engaged": 5,
-            "profile_views": 4,
+            "views": 2615,
+            "interactions": 6,
+            "accounts_engaged": 6,
+            "profile_views": 5,
             "followers": 1414
           }
         }
