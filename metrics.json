@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-10T09:25:56.360Z",
+  "updated": "2026-10-10T15:43:11.851Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6301,
-        "media_count": 548,
+        "followers": 6302,
+        "media_count": 549,
         "views_30d": 25001,
-        "reach_28d": 1917,
+        "reach_28d": 1961,
         "interactions_30d": 169,
         "accounts_engaged_30d": 47,
         "profile_views_30d": 661,
@@ -50,22 +50,22 @@
             "timestamp": "2026-08-01T15:12:12+0000"
           },
           {
-            "caption": "¿Ya conoces nuestra sede mayorca? 😁 no esperes más y agenda ya tu cita en le li",
-            "type": "Video",
-            "likes": 13,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 13,
-            "timestamp": "2026-07-22T16:52:47+0000"
-          },
-          {
             "caption": "Que esperas para tener la sonrisa de tus sueños ? Agenda hoy tu cita en cualquie",
             "type": "Video",
-            "likes": 11,
+            "likes": 12,
             "comments": 1,
             "video_views": 0,
-            "total_interactions": 12,
+            "total_interactions": 13,
             "timestamp": "2026-08-26T20:01:45+0000"
+          },
+          {
+            "caption": "Tu sonrisa dice mucho de ti. ✨",
+            "type": "Video",
+            "likes": 11,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 11,
+            "timestamp": "2026-08-10T16:54:07+0000"
           }
         ],
         "monthly": {
@@ -84,11 +84,11 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 8378,
-            "interactions": 68,
-            "accounts_engaged": 18,
-            "profile_views": 215,
-            "followers": 6301
+            "views": 8594,
+            "interactions": 73,
+            "accounts_engaged": 19,
+            "profile_views": 219,
+            "followers": 6302
           }
         }
       },
@@ -122,8 +122,8 @@
         "username": "ridasaconstructora",
         "followers": 1415,
         "media_count": 687,
-        "views_30d": 19107,
-        "reach_28d": 7395,
+        "views_30d": 19108,
+        "reach_28d": 7424,
         "interactions_30d": 90,
         "accounts_engaged_30d": 40,
         "profile_views_30d": 60,
@@ -199,10 +199,10 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 9516,
-            "interactions": 16,
-            "accounts_engaged": 11,
-            "profile_views": 18,
+            "views": 9645,
+            "interactions": 18,
+            "accounts_engaged": 12,
+            "profile_views": 19,
             "followers": 1415
           }
         }
