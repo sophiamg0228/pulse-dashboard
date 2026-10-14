@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-14T11:14:25.505Z",
+  "updated": "2026-10-14T16:35:06.008Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6301,
+        "followers": 6297,
         "media_count": 550,
         "views_30d": 27550,
-        "reach_28d": 2696,
+        "reach_28d": 2749,
         "interactions_30d": 164,
         "accounts_engaged_30d": 45,
         "profile_views_30d": 670,
@@ -84,11 +84,11 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 13486,
-            "interactions": 89,
-            "accounts_engaged": 24,
-            "profile_views": 305,
-            "followers": 6301
+            "views": 13901,
+            "interactions": 91,
+            "accounts_engaged": 25,
+            "profile_views": 311,
+            "followers": 6297
           }
         }
       },
@@ -121,9 +121,9 @@
       "ig": {
         "username": "ridasaconstructora",
         "followers": 1416,
-        "media_count": 687,
+        "media_count": 689,
         "views_30d": 20378,
-        "reach_28d": 7737,
+        "reach_28d": 7867,
         "interactions_30d": 87,
         "accounts_engaged_30d": 41,
         "profile_views_30d": 61,
@@ -136,15 +136,6 @@
             "video_views": 0,
             "total_interactions": 6,
             "timestamp": "2026-09-30T01:00:17+0000"
-          },
-          {
-            "caption": "📍 Alvarado, Tolima",
-            "type": "Imagen",
-            "likes": 6,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 6,
-            "timestamp": "2026-08-17T15:00:12+0000"
           },
           {
             "caption": "📍 Alvarado, Tolima",
@@ -181,6 +172,15 @@
             "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-04T15:00:11+0000"
+          },
+          {
+            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "type": "Video",
+            "likes": 4,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-09-01T13:38:06+0000"
           }
         ],
         "monthly": {
@@ -199,10 +199,10 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 12170,
-            "interactions": 26,
-            "accounts_engaged": 18,
-            "profile_views": 25,
+            "views": 12441,
+            "interactions": 27,
+            "accounts_engaged": 19,
+            "profile_views": 26,
             "followers": 1416
           }
         }
