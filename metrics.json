@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T00:14:53.727Z",
+  "updated": "2026-10-14T05:49:43.355Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6301,
         "media_count": 550,
-        "views_30d": 27081,
-        "reach_28d": 2641,
-        "interactions_30d": 161,
-        "accounts_engaged_30d": 43,
-        "profile_views_30d": 666,
+        "views_30d": 27537,
+        "reach_28d": 2730,
+        "interactions_30d": 164,
+        "accounts_engaged_30d": 45,
+        "profile_views_30d": 670,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,10 +84,10 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 12983,
-            "interactions": 86,
-            "accounts_engaged": 22,
-            "profile_views": 301,
+            "views": 13439,
+            "interactions": 89,
+            "accounts_engaged": 24,
+            "profile_views": 305,
             "followers": 6301
           }
         }
@@ -122,10 +122,10 @@
         "username": "ridasaconstructora",
         "followers": 1416,
         "media_count": 687,
-        "views_30d": 20027,
-        "reach_28d": 7837,
-        "interactions_30d": 86,
-        "accounts_engaged_30d": 40,
+        "views_30d": 20360,
+        "reach_28d": 7957,
+        "interactions_30d": 87,
+        "accounts_engaged_30d": 41,
         "profile_views_30d": 60,
         "top_posts": [
           {
@@ -174,13 +174,13 @@
             "timestamp": "2026-09-19T16:48:40+0000"
           },
           {
-            "caption": "📍Alvarado Tolima",
-            "type": "Video",
-            "likes": 3,
-            "comments": 1,
+            "caption": "📍 Alvarado, Tolima",
+            "type": "Imagen",
+            "likes": 4,
+            "comments": 0,
             "video_views": 0,
             "total_interactions": 4,
-            "timestamp": "2026-09-18T19:12:59+0000"
+            "timestamp": "2026-09-04T15:00:11+0000"
           }
         ],
         "monthly": {
@@ -199,16 +199,16 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 11744,
-            "interactions": 24,
-            "accounts_engaged": 16,
+            "views": 12077,
+            "interactions": 25,
+            "accounts_engaged": 17,
             "profile_views": 24,
             "followers": 1416
           }
         }
       },
       "fb": {
-        "fans": 160,
+        "fans": 161,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
