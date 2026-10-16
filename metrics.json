@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-16T10:44:54.816Z",
+  "updated": "2026-10-16T15:12:45.101Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6298,
+        "followers": 6300,
         "media_count": 550,
         "views_30d": 28315,
-        "reach_28d": 3145,
+        "reach_28d": 3178,
         "interactions_30d": 154,
         "accounts_engaged_30d": 45,
         "profile_views_30d": 660,
@@ -84,11 +84,11 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 16151,
+            "views": 16391,
             "interactions": 94,
             "accounts_engaged": 27,
-            "profile_views": 355,
-            "followers": 6298
+            "profile_views": 362,
+            "followers": 6300
           }
         }
       },
@@ -123,7 +123,7 @@
         "followers": 1416,
         "media_count": 689,
         "views_30d": 21279,
-        "reach_28d": 7823,
+        "reach_28d": 7876,
         "interactions_30d": 101,
         "accounts_engaged_30d": 47,
         "profile_views_30d": 69,
@@ -199,7 +199,7 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 13788,
+            "views": 13889,
             "interactions": 43,
             "accounts_engaged": 26,
             "profile_views": 38,
@@ -208,7 +208,7 @@
         }
       },
       "fb": {
-        "fans": 161,
+        "fans": 162,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
