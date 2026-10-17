@@ -1,17 +1,17 @@
 {
-  "updated": "2026-10-17T01:03:52.364Z",
+  "updated": "2026-10-17T06:34:56.532Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6301,
+        "followers": 6302,
         "media_count": 550,
-        "views_30d": 27973,
-        "reach_28d": 3211,
-        "interactions_30d": 145,
+        "views_30d": 28225,
+        "reach_28d": 3240,
+        "interactions_30d": 146,
         "accounts_engaged_30d": 43,
-        "profile_views_30d": 665,
+        "profile_views_30d": 668,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,11 +84,11 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 16803,
-            "interactions": 95,
+            "views": 17055,
+            "interactions": 96,
             "accounts_engaged": 28,
-            "profile_views": 383,
-            "followers": 6301
+            "profile_views": 386,
+            "followers": 6302
           }
         }
       },
@@ -122,11 +122,11 @@
         "username": "ridasaconstructora",
         "followers": 1416,
         "media_count": 689,
-        "views_30d": 20998,
-        "reach_28d": 7932,
-        "interactions_30d": 101,
-        "accounts_engaged_30d": 46,
-        "profile_views_30d": 66,
+        "views_30d": 21059,
+        "reach_28d": 7940,
+        "interactions_30d": 103,
+        "accounts_engaged_30d": 47,
+        "profile_views_30d": 68,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -199,10 +199,10 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 14154,
-            "interactions": 44,
-            "accounts_engaged": 27,
-            "profile_views": 38,
+            "views": 14215,
+            "interactions": 46,
+            "accounts_engaged": 28,
+            "profile_views": 40,
             "followers": 1416
           }
         }
