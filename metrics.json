@@ -1,17 +1,17 @@
 {
-  "updated": "2026-10-21T01:17:40.305Z",
+  "updated": "2026-10-21T07:04:59.326Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6297,
+        "followers": 6296,
         "media_count": 552,
-        "views_30d": 29892,
-        "reach_28d": 3589,
-        "interactions_30d": 156,
-        "accounts_engaged_30d": 50,
-        "profile_views_30d": 694,
+        "views_30d": 30034,
+        "reach_28d": 3566,
+        "interactions_30d": 157,
+        "accounts_engaged_30d": 51,
+        "profile_views_30d": 699,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,11 +84,11 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 21682,
-            "interactions": 120,
-            "accounts_engaged": 40,
-            "profile_views": 480,
-            "followers": 6297
+            "views": 21824,
+            "interactions": 121,
+            "accounts_engaged": 41,
+            "profile_views": 485,
+            "followers": 6296
           }
         }
       },
@@ -120,13 +120,13 @@
       "name": "Ridasa Constructora",
       "ig": {
         "username": "ridasaconstructora",
-        "followers": 1416,
+        "followers": 1415,
         "media_count": 690,
-        "views_30d": 21530,
-        "reach_28d": 8025,
-        "interactions_30d": 102,
-        "accounts_engaged_30d": 45,
-        "profile_views_30d": 68,
+        "views_30d": 21643,
+        "reach_28d": 7889,
+        "interactions_30d": 104,
+        "accounts_engaged_30d": 47,
+        "profile_views_30d": 71,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -199,11 +199,11 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 16480,
-            "interactions": 55,
-            "accounts_engaged": 30,
-            "profile_views": 46,
-            "followers": 1416
+            "views": 16593,
+            "interactions": 57,
+            "accounts_engaged": 32,
+            "profile_views": 49,
+            "followers": 1415
           }
         }
       },
