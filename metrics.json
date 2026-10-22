@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T01:13:52.750Z",
+  "updated": "2026-10-22T07:07:07.269Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6295,
         "media_count": 552,
-        "views_30d": 29880,
-        "reach_28d": 3648,
-        "interactions_30d": 160,
-        "accounts_engaged_30d": 50,
-        "profile_views_30d": 687,
+        "views_30d": 30190,
+        "reach_28d": 3630,
+        "interactions_30d": 161,
+        "accounts_engaged_30d": 52,
+        "profile_views_30d": 696,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -50,6 +50,15 @@
             "timestamp": "2026-08-26T20:01:45+0000"
           },
           {
+            "caption": "Detrás de cada sonrisa transformada hay un equipo comprometido con tu salud. 💚\ud83e",
+            "type": "Imagen",
+            "likes": 11,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 11,
+            "timestamp": "2026-10-20T15:00:10+0000"
+          },
+          {
             "caption": "Tu sonrisa dice mucho de ti. ✨",
             "type": "Video",
             "likes": 11,
@@ -57,15 +66,6 @@
             "video_views": 0,
             "total_interactions": 11,
             "timestamp": "2026-08-10T16:54:07+0000"
-          },
-          {
-            "caption": "Detrás de cada sonrisa transformada hay un equipo comprometido con tu salud. 💚\ud83e",
-            "type": "Imagen",
-            "likes": 10,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 10,
-            "timestamp": "2026-10-20T15:00:10+0000"
           }
         ],
         "monthly": {
@@ -84,16 +84,16 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 22552,
-            "interactions": 127,
-            "accounts_engaged": 42,
-            "profile_views": 508,
+            "views": 22862,
+            "interactions": 128,
+            "accounts_engaged": 44,
+            "profile_views": 517,
             "followers": 6295
           }
         }
       },
       "fb": {
-        "fans": 7170,
+        "fans": 7169,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
@@ -122,8 +122,8 @@
         "username": "ridasaconstructora",
         "followers": 1416,
         "media_count": 690,
-        "views_30d": 21552,
-        "reach_28d": 7943,
+        "views_30d": 21599,
+        "reach_28d": 7820,
         "interactions_30d": 104,
         "accounts_engaged_30d": 47,
         "profile_views_30d": 73,
@@ -199,7 +199,7 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 17056,
+            "views": 17103,
             "interactions": 58,
             "accounts_engaged": 32,
             "profile_views": 53,
