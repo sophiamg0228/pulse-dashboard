@@ -1,17 +1,17 @@
 {
-  "updated": "2026-10-23T01:13:05.563Z",
+  "updated": "2026-10-23T06:59:07.011Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6297,
+        "followers": 6296,
         "media_count": 552,
-        "views_30d": 30325,
-        "reach_28d": 3684,
+        "views_30d": 30454,
+        "reach_28d": 3708,
         "interactions_30d": 156,
         "accounts_engaged_30d": 52,
-        "profile_views_30d": 701,
+        "profile_views_30d": 705,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,11 +84,11 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 23554,
+            "views": 23683,
             "interactions": 129,
             "accounts_engaged": 44,
-            "profile_views": 540,
-            "followers": 6297
+            "profile_views": 544,
+            "followers": 6296
           }
         }
       },
@@ -121,10 +121,10 @@
       "ig": {
         "username": "ridasaconstructora",
         "followers": 1415,
-        "media_count": 688,
-        "views_30d": 21338,
-        "reach_28d": 7883,
-        "interactions_30d": 101,
+        "media_count": 689,
+        "views_30d": 21476,
+        "reach_28d": 7891,
+        "interactions_30d": 103,
         "accounts_engaged_30d": 47,
         "profile_views_30d": 69,
         "top_posts": [
@@ -136,15 +136,6 @@
             "video_views": 0,
             "total_interactions": 6,
             "timestamp": "2026-09-30T01:00:17+0000"
-          },
-          {
-            "caption": "📍 Alvarado, Tolima",
-            "type": "Imagen",
-            "likes": 6,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 6,
-            "timestamp": "2026-08-17T15:00:12+0000"
           },
           {
             "caption": "📍 Alvarado, Tolima",
@@ -181,6 +172,15 @@
             "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-04T15:00:11+0000"
+          },
+          {
+            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "type": "Video",
+            "likes": 4,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-09-01T13:38:06+0000"
           }
         ],
         "monthly": {
@@ -199,8 +199,8 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 17425,
-            "interactions": 60,
+            "views": 17563,
+            "interactions": 62,
             "accounts_engaged": 34,
             "profile_views": 54,
             "followers": 1415
