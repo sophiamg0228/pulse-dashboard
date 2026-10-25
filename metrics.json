@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T00:50:29.363Z",
+  "updated": "2026-10-25T05:42:13.426Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6293,
         "media_count": 553,
-        "views_30d": 29515,
-        "reach_28d": 3714,
+        "views_30d": 29568,
+        "reach_28d": 3720,
         "interactions_30d": 151,
         "accounts_engaged_30d": 49,
-        "profile_views_30d": 687,
+        "profile_views_30d": 690,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,10 +84,10 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 24551,
+            "views": 24604,
             "interactions": 133,
             "accounts_engaged": 44,
-            "profile_views": 577,
+            "profile_views": 580,
             "followers": 6293
           }
         }
@@ -122,8 +122,8 @@
         "username": "ridasaconstructora",
         "followers": 1417,
         "media_count": 689,
-        "views_30d": 21483,
-        "reach_28d": 7811,
+        "views_30d": 21657,
+        "reach_28d": 7847,
         "interactions_30d": 108,
         "accounts_engaged_30d": 49,
         "profile_views_30d": 70,
@@ -199,7 +199,7 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 18555,
+            "views": 18729,
             "interactions": 68,
             "accounts_engaged": 37,
             "profile_views": 58,
