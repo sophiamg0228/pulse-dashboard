@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-01T01:51:29.134Z",
+  "updated": "2026-11-01T08:43:27.878Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6296,
+        "followers": 6297,
         "media_count": 554,
-        "views_30d": 28445,
-        "reach_28d": 3821,
+        "views_30d": 28574,
+        "reach_28d": 3776,
         "interactions_30d": 168,
-        "accounts_engaged_30d": 54,
-        "profile_views_30d": 717,
+        "accounts_engaged_30d": 55,
+        "profile_views_30d": 722,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,18 +84,18 @@
             "followers": 6280
           },
           "2026-10": {
-            "views": 28445,
+            "views": 28574,
             "interactions": 168,
-            "accounts_engaged": 54,
-            "profile_views": 717,
-            "followers": 6296
+            "accounts_engaged": 55,
+            "profile_views": 722,
+            "followers": 6297
           },
           "2026-11": {
-            "views": 0,
+            "views": 1,
             "interactions": 0,
             "accounts_engaged": 0,
             "profile_views": 0,
-            "followers": 6296
+            "followers": 6297
           }
         }
       },
@@ -134,8 +134,8 @@
         "username": "ridasaconstructora",
         "followers": 1419,
         "media_count": 689,
-        "views_30d": 21707,
-        "reach_28d": 7454,
+        "views_30d": 21812,
+        "reach_28d": 6890,
         "interactions_30d": 80,
         "accounts_engaged_30d": 43,
         "profile_views_30d": 72,
@@ -211,14 +211,14 @@
             "followers": 1412
           },
           "2026-10": {
-            "views": 21707,
+            "views": 21812,
             "interactions": 80,
             "accounts_engaged": 43,
             "profile_views": 72,
             "followers": 1419
           },
           "2026-11": {
-            "views": 0,
+            "views": 11,
             "interactions": 0,
             "accounts_engaged": 0,
             "profile_views": 0,
