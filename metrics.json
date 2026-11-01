@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T22:11:56.840Z",
+  "updated": "2026-11-01T01:51:29.134Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6296,
         "media_count": 554,
-        "views_30d": 29410,
-        "reach_28d": 3808,
-        "interactions_30d": 177,
-        "accounts_engaged_30d": 57,
-        "profile_views_30d": 736,
+        "views_30d": 28445,
+        "reach_28d": 3821,
+        "interactions_30d": 168,
+        "accounts_engaged_30d": 54,
+        "profile_views_30d": 717,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -84,6 +84,13 @@
             "followers": 6280
           },
           "2026-10": {
+            "views": 28445,
+            "interactions": 168,
+            "accounts_engaged": 54,
+            "profile_views": 717,
+            "followers": 6296
+          },
+          "2026-11": {
             "views": 0,
             "interactions": 0,
             "accounts_engaged": 0,
@@ -112,6 +119,11 @@
             "impressions": 0,
             "engagements": 0,
             "reach": 0
+          },
+          "2026-11": {
+            "impressions": 0,
+            "engagements": 0,
+            "reach": 0
           }
         }
       }
@@ -122,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1419,
         "media_count": 689,
-        "views_30d": 21846,
-        "reach_28d": 7393,
-        "interactions_30d": 76,
-        "accounts_engaged_30d": 42,
-        "profile_views_30d": 73,
+        "views_30d": 21707,
+        "reach_28d": 7454,
+        "interactions_30d": 80,
+        "accounts_engaged_30d": 43,
+        "profile_views_30d": 72,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -145,6 +157,15 @@
             "video_views": 0,
             "total_interactions": 5,
             "timestamp": "2026-08-27T16:50:58+0000"
+          },
+          {
+            "caption": "🚨 ¡ATENCIÓN! Esta promo no se repite: 600 m² por $45 MILLONES 🚨",
+            "type": "Video",
+            "likes": 4,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-10-23T01:22:56+0000"
           },
           {
             "caption": "600 m² por solo $45 MILLONES 🔥",
@@ -172,15 +193,6 @@
             "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-04T15:00:11+0000"
-          },
-          {
-            "caption": "📍 Alvarado, Tolima — Molino Country Club",
-            "type": "Video",
-            "likes": 4,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 4,
-            "timestamp": "2026-09-01T13:38:06+0000"
           }
         ],
         "monthly": {
@@ -199,6 +211,13 @@
             "followers": 1412
           },
           "2026-10": {
+            "views": 21707,
+            "interactions": 80,
+            "accounts_engaged": 43,
+            "profile_views": 72,
+            "followers": 1419
+          },
+          "2026-11": {
             "views": 0,
             "interactions": 0,
             "accounts_engaged": 0,
@@ -224,6 +243,11 @@
             "reach": 0
           },
           "2026-10": {
+            "impressions": 0,
+            "engagements": 0,
+            "reach": 0
+          },
+          "2026-11": {
             "impressions": 0,
             "engagements": 0,
             "reach": 0
