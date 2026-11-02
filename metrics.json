@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-01T20:11:48.269Z",
+  "updated": "2026-11-02T00:15:23.264Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6300,
+        "followers": 6301,
         "media_count": 554,
-        "views_30d": 28574,
-        "reach_28d": 3783,
-        "interactions_30d": 168,
-        "accounts_engaged_30d": 55,
-        "profile_views_30d": 722,
+        "views_30d": 27699,
+        "reach_28d": 3795,
+        "interactions_30d": 159,
+        "accounts_engaged_30d": 54,
+        "profile_views_30d": 688,
         "top_posts": [
           {
             "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 175,
+            "views": 234,
             "interactions": 0,
             "accounts_engaged": 0,
-            "profile_views": 2,
-            "followers": 6300
+            "profile_views": 4,
+            "followers": 6301
           }
         }
       },
@@ -132,13 +132,13 @@
       "name": "Ridasa Constructora",
       "ig": {
         "username": "ridasaconstructora",
-        "followers": 1419,
+        "followers": 1420,
         "media_count": 689,
-        "views_30d": 21813,
-        "reach_28d": 7072,
-        "interactions_30d": 80,
-        "accounts_engaged_30d": 43,
-        "profile_views_30d": 72,
+        "views_30d": 21445,
+        "reach_28d": 7116,
+        "interactions_30d": 84,
+        "accounts_engaged_30d": 46,
+        "profile_views_30d": 71,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,11 +218,11 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 467,
+            "views": 607,
             "interactions": 6,
             "accounts_engaged": 3,
             "profile_views": 1,
-            "followers": 1419
+            "followers": 1420
           }
         }
       },
