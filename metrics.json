@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T08:38:24.837Z",
+  "updated": "2026-11-04T16:50:57.871Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -8,7 +8,7 @@
         "followers": 6303,
         "media_count": 555,
         "views_30d": 28224,
-        "reach_28d": 3827,
+        "reach_28d": 3840,
         "interactions_30d": 162,
         "accounts_engaged_30d": 53,
         "profile_views_30d": 709,
@@ -91,10 +91,10 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 2127,
-            "interactions": 13,
+            "views": 2255,
+            "interactions": 14,
             "accounts_engaged": 8,
-            "profile_views": 56,
+            "profile_views": 63,
             "followers": 6303
           }
         }
@@ -134,8 +134,8 @@
         "username": "ridasaconstructora",
         "followers": 1421,
         "media_count": 690,
-        "views_30d": 20625,
-        "reach_28d": 6080,
+        "views_30d": 20627,
+        "reach_28d": 6309,
         "interactions_30d": 86,
         "accounts_engaged_30d": 48,
         "profile_views_30d": 79,
@@ -218,10 +218,10 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 2302,
-            "interactions": 12,
-            "accounts_engaged": 9,
-            "profile_views": 12,
+            "views": 2914,
+            "interactions": 14,
+            "accounts_engaged": 11,
+            "profile_views": 15,
             "followers": 1421
           }
         }
