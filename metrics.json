@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T00:45:29.268Z",
+  "updated": "2026-11-06T07:39:45.376Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6303,
         "media_count": 556,
-        "views_30d": 29032,
-        "reach_28d": 4283,
-        "interactions_30d": 150,
-        "accounts_engaged_30d": 53,
-        "profile_views_30d": 748,
+        "views_30d": 29336,
+        "reach_28d": 4365,
+        "interactions_30d": 152,
+        "accounts_engaged_30d": 54,
+        "profile_views_30d": 752,
         "top_posts": [
           {
             "caption": "Octubre está terminando. ¿Ya agendaste tu cita? 🦷📅",
@@ -91,10 +91,10 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 4755,
-            "interactions": 23,
-            "accounts_engaged": 10,
-            "profile_views": 138,
+            "views": 5059,
+            "interactions": 25,
+            "accounts_engaged": 11,
+            "profile_views": 142,
             "followers": 6303
           }
         }
@@ -134,8 +134,8 @@
         "username": "ridasaconstructora",
         "followers": 1422,
         "media_count": 690,
-        "views_30d": 19059,
-        "reach_28d": 6075,
+        "views_30d": 19180,
+        "reach_28d": 6097,
         "interactions_30d": 89,
         "accounts_engaged_30d": 50,
         "profile_views_30d": 82,
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 3721,
+            "views": 3842,
             "interactions": 15,
             "accounts_engaged": 11,
             "profile_views": 17,
