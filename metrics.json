@@ -1,27 +1,18 @@
 {
-  "updated": "2026-11-05T19:30:31.914Z",
+  "updated": "2026-11-06T00:45:29.268Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
         "followers": 6303,
-        "media_count": 555,
-        "views_30d": 28506,
-        "reach_28d": 4053,
-        "interactions_30d": 154,
-        "accounts_engaged_30d": 52,
-        "profile_views_30d": 727,
+        "media_count": 556,
+        "views_30d": 29032,
+        "reach_28d": 4283,
+        "interactions_30d": 150,
+        "accounts_engaged_30d": 53,
+        "profile_views_30d": 748,
         "top_posts": [
-          {
-            "caption": "¿Sabías que tenemos 3 sedes en Medellín? 📍",
-            "type": "Video",
-            "likes": 55,
-            "comments": 1,
-            "video_views": 0,
-            "total_interactions": 56,
-            "timestamp": "2026-08-19T18:28:22+0000"
-          },
           {
             "caption": "Octubre está terminando. ¿Ya agendaste tu cita? 🦷📅",
             "type": "Imagen",
@@ -66,6 +57,15 @@
             "video_views": 0,
             "total_interactions": 9,
             "timestamp": "2026-09-07T17:53:03+0000"
+          },
+          {
+            "caption": "Este octubre tu sonrisa también puede brillar. ✨🦷",
+            "type": "Imagen",
+            "likes": 7,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 7,
+            "timestamp": "2026-10-01T19:41:58+0000"
           }
         ],
         "monthly": {
@@ -91,10 +91,10 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 3806,
-            "interactions": 19,
-            "accounts_engaged": 9,
-            "profile_views": 124,
+            "views": 4755,
+            "interactions": 23,
+            "accounts_engaged": 10,
+            "profile_views": 138,
             "followers": 6303
           }
         }
@@ -134,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1422,
         "media_count": 690,
-        "views_30d": 19967,
-        "reach_28d": 6047,
+        "views_30d": 19059,
+        "reach_28d": 6075,
         "interactions_30d": 89,
         "accounts_engaged_30d": 50,
-        "profile_views_30d": 83,
+        "profile_views_30d": 82,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 3587,
+            "views": 3721,
             "interactions": 15,
             "accounts_engaged": 11,
             "profile_views": 17,
