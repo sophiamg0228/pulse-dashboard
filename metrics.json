@@ -1,18 +1,27 @@
 {
-  "updated": "2026-11-09T09:08:52.809Z",
+  "updated": "2026-11-09T20:24:52.768Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6295,
-        "media_count": 556,
+        "followers": 6293,
+        "media_count": 557,
         "views_30d": 28399,
-        "reach_28d": 3860,
+        "reach_28d": 4235,
         "interactions_30d": 150,
         "accounts_engaged_30d": 54,
         "profile_views_30d": 744,
         "top_posts": [
+          {
+            "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
+            "type": "Video",
+            "likes": 23,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 23,
+            "timestamp": "2026-11-09T14:44:15+0000"
+          },
           {
             "caption": "Octubre está terminando. ¿Ya agendaste tu cita? 🦷📅",
             "type": "Imagen",
@@ -21,15 +30,6 @@
             "video_views": 0,
             "total_interactions": 14,
             "timestamp": "2026-10-27T15:49:19+0000"
-          },
-          {
-            "caption": "Que esperas para tener la sonrisa de tus sueños ? Agenda hoy tu cita en cualquie",
-            "type": "Video",
-            "likes": 12,
-            "comments": 1,
-            "video_views": 0,
-            "total_interactions": 13,
-            "timestamp": "2026-08-26T20:01:45+0000"
           },
           {
             "caption": "Detrás de cada sonrisa transformada hay un equipo comprometido con tu salud. 💚\ud83e",
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 6866,
-            "interactions": 41,
-            "accounts_engaged": 14,
-            "profile_views": 200,
-            "followers": 6295
+            "views": 8418,
+            "interactions": 81,
+            "accounts_engaged": 33,
+            "profile_views": 241,
+            "followers": 6293
           }
         }
       },
@@ -134,8 +134,8 @@
         "username": "ridasaconstructora",
         "followers": 1425,
         "media_count": 692,
-        "views_30d": 18649,
-        "reach_28d": 6233,
+        "views_30d": 18650,
+        "reach_28d": 6423,
         "interactions_30d": 94,
         "accounts_engaged_30d": 52,
         "profile_views_30d": 79,
@@ -218,10 +218,10 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 5737,
-            "interactions": 29,
-            "accounts_engaged": 17,
-            "profile_views": 24,
+            "views": 6501,
+            "interactions": 33,
+            "accounts_engaged": 21,
+            "profile_views": 26,
             "followers": 1425
           }
         }
