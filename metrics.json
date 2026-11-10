@@ -1,25 +1,25 @@
 {
-  "updated": "2026-11-10T03:10:05.911Z",
+  "updated": "2026-11-10T12:07:25.710Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6292,
+        "followers": 6293,
         "media_count": 557,
-        "views_30d": 29588,
-        "reach_28d": 4607,
-        "interactions_30d": 187,
-        "accounts_engaged_30d": 70,
-        "profile_views_30d": 780,
+        "views_30d": 29772,
+        "reach_28d": 4417,
+        "interactions_30d": 190,
+        "accounts_engaged_30d": 73,
+        "profile_views_30d": 787,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
             "type": "Video",
-            "likes": 26,
+            "likes": 27,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 26,
+            "total_interactions": 27,
             "timestamp": "2026-11-09T14:44:15+0000"
           },
           {
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 9430,
-            "interactions": 86,
-            "accounts_engaged": 37,
-            "profile_views": 264,
-            "followers": 6292
+            "views": 9718,
+            "interactions": 89,
+            "accounts_engaged": 40,
+            "profile_views": 274,
+            "followers": 6293
           }
         }
       },
@@ -134,8 +134,8 @@
         "username": "ridasaconstructora",
         "followers": 1425,
         "media_count": 692,
-        "views_30d": 19358,
-        "reach_28d": 6581,
+        "views_30d": 19539,
+        "reach_28d": 6380,
         "interactions_30d": 96,
         "accounts_engaged_30d": 53,
         "profile_views_30d": 78,
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 7011,
+            "views": 7329,
             "interactions": 34,
             "accounts_engaged": 21,
             "profile_views": 26,
