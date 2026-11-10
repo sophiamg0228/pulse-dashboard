@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-10T12:07:25.710Z",
+  "updated": "2026-11-10T20:13:37.713Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6293,
-        "media_count": 557,
+        "followers": 6296,
+        "media_count": 558,
         "views_30d": 29772,
-        "reach_28d": 4417,
+        "reach_28d": 4785,
         "interactions_30d": 190,
         "accounts_engaged_30d": 73,
         "profile_views_30d": 787,
@@ -16,10 +16,10 @@
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
             "type": "Video",
-            "likes": 27,
+            "likes": 28,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 27,
+            "total_interactions": 28,
             "timestamp": "2026-11-09T14:44:15+0000"
           },
           {
@@ -41,15 +41,6 @@
             "timestamp": "2026-10-20T15:00:10+0000"
           },
           {
-            "caption": "¿Ya agendaste tu cita?🤓",
-            "type": "Video",
-            "likes": 10,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 10,
-            "timestamp": "2026-09-03T13:16:27+0000"
-          },
-          {
             "caption": "Una sonrisa sana empieza con el cuidado correcto. 🦷✨",
             "type": "Video",
             "likes": 9,
@@ -66,6 +57,15 @@
             "video_views": 0,
             "total_interactions": 7,
             "timestamp": "2026-10-01T19:41:58+0000"
+          },
+          {
+            "caption": "¿Sabes qué pasa exactamente en un control dental? 🦷",
+            "type": "Imagen",
+            "likes": 7,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 7,
+            "timestamp": "2026-09-22T16:31:58+0000"
           }
         ],
         "monthly": {
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 9718,
-            "interactions": 89,
-            "accounts_engaged": 40,
-            "profile_views": 274,
-            "followers": 6293
+            "views": 10528,
+            "interactions": 95,
+            "accounts_engaged": 41,
+            "profile_views": 294,
+            "followers": 6296
           }
         }
       },
@@ -133,9 +133,9 @@
       "ig": {
         "username": "ridasaconstructora",
         "followers": 1425,
-        "media_count": 692,
+        "media_count": 693,
         "views_30d": 19539,
-        "reach_28d": 6380,
+        "reach_28d": 6436,
         "interactions_30d": 96,
         "accounts_engaged_30d": 53,
         "profile_views_30d": 78,
@@ -218,9 +218,9 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 7329,
-            "interactions": 34,
-            "accounts_engaged": 21,
+            "views": 7830,
+            "interactions": 40,
+            "accounts_engaged": 25,
             "profile_views": 26,
             "followers": 1425
           }
