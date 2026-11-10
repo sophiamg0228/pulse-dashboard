@@ -1,25 +1,25 @@
 {
-  "updated": "2026-11-09T20:24:52.768Z",
+  "updated": "2026-11-10T03:10:05.911Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6293,
+        "followers": 6292,
         "media_count": 557,
-        "views_30d": 28399,
-        "reach_28d": 4235,
-        "interactions_30d": 150,
-        "accounts_engaged_30d": 54,
-        "profile_views_30d": 744,
+        "views_30d": 29588,
+        "reach_28d": 4607,
+        "interactions_30d": 187,
+        "accounts_engaged_30d": 70,
+        "profile_views_30d": 780,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
             "type": "Video",
-            "likes": 23,
+            "likes": 26,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 23,
+            "total_interactions": 26,
             "timestamp": "2026-11-09T14:44:15+0000"
           },
           {
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 8418,
-            "interactions": 81,
-            "accounts_engaged": 33,
-            "profile_views": 241,
-            "followers": 6293
+            "views": 9430,
+            "interactions": 86,
+            "accounts_engaged": 37,
+            "profile_views": 264,
+            "followers": 6292
           }
         }
       },
@@ -134,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1425,
         "media_count": 692,
-        "views_30d": 18650,
-        "reach_28d": 6423,
-        "interactions_30d": 94,
-        "accounts_engaged_30d": 52,
-        "profile_views_30d": 79,
+        "views_30d": 19358,
+        "reach_28d": 6581,
+        "interactions_30d": 96,
+        "accounts_engaged_30d": 53,
+        "profile_views_30d": 78,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,8 +218,8 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 6501,
-            "interactions": 33,
+            "views": 7011,
+            "interactions": 34,
             "accounts_engaged": 21,
             "profile_views": 26,
             "followers": 1425
