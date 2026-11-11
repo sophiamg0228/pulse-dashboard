@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-11T08:51:57.437Z",
+  "updated": "2026-11-11T16:53:11.544Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6297,
+        "followers": 6298,
         "media_count": 559,
         "views_30d": 30892,
-        "reach_28d": 4523,
+        "reach_28d": 4560,
         "interactions_30d": 224,
         "accounts_engaged_30d": 79,
         "profile_views_30d": 818,
@@ -23,6 +23,15 @@
             "timestamp": "2026-11-09T14:44:15+0000"
           },
           {
+            "caption": "Black Week en Medellín: ¡inicia tu ortodoncia por solo $80.000! 🖤😁",
+            "type": "Video",
+            "likes": 16,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 16,
+            "timestamp": "2026-11-10T22:56:38+0000"
+          },
+          {
             "caption": "Octubre está terminando. ¿Ya agendaste tu cita? 🦷📅",
             "type": "Imagen",
             "likes": 15,
@@ -30,15 +39,6 @@
             "video_views": 0,
             "total_interactions": 15,
             "timestamp": "2026-10-27T15:49:19+0000"
-          },
-          {
-            "caption": "Black Week en Medellín: ¡inicia tu ortodoncia por solo $80.000! 🖤😁",
-            "type": "Video",
-            "likes": 14,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 14,
-            "timestamp": "2026-11-10T22:56:38+0000"
           },
           {
             "caption": "Detrás de cada sonrisa transformada hay un equipo comprometido con tu salud. 💚\ud83e",
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 11649,
-            "interactions": 125,
-            "accounts_engaged": 47,
-            "profile_views": 317,
-            "followers": 6297
+            "views": 11860,
+            "interactions": 131,
+            "accounts_engaged": 49,
+            "profile_views": 321,
+            "followers": 6298
           }
         }
       },
@@ -135,7 +135,7 @@
         "followers": 1425,
         "media_count": 693,
         "views_30d": 20034,
-        "reach_28d": 6297,
+        "reach_28d": 6318,
         "interactions_30d": 99,
         "accounts_engaged_30d": 55,
         "profile_views_30d": 77,
@@ -218,10 +218,10 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 8034,
+            "views": 8284,
             "interactions": 40,
             "accounts_engaged": 25,
-            "profile_views": 26,
+            "profile_views": 28,
             "followers": 1425
           }
         }
