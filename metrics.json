@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T05:50:33.987Z",
+  "updated": "2026-11-12T14:39:39.304Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6299,
         "media_count": 559,
-        "views_30d": 30541,
-        "reach_28d": 4635,
+        "views_30d": 30550,
+        "reach_28d": 4275,
         "interactions_30d": 230,
         "accounts_engaged_30d": 81,
-        "profile_views_30d": 815,
+        "profile_views_30d": 816,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
@@ -25,10 +25,10 @@
           {
             "caption": "Black Week en Medellín: ¡inicia tu ortodoncia por solo $80.000! 🖤😁",
             "type": "Video",
-            "likes": 16,
+            "likes": 17,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 16,
+            "total_interactions": 17,
             "timestamp": "2026-11-10T22:56:38+0000"
           },
           {
@@ -91,10 +91,10 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 12289,
-            "interactions": 134,
-            "accounts_engaged": 50,
-            "profile_views": 332,
+            "views": 12445,
+            "interactions": 136,
+            "accounts_engaged": 51,
+            "profile_views": 337,
             "followers": 6299
           }
         }
@@ -134,8 +134,8 @@
         "username": "ridasaconstructora",
         "followers": 1425,
         "media_count": 693,
-        "views_30d": 20138,
-        "reach_28d": 6447,
+        "views_30d": 20156,
+        "reach_28d": 6351,
         "interactions_30d": 99,
         "accounts_engaged_30d": 55,
         "profile_views_30d": 78,
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 8752,
+            "views": 8900,
             "interactions": 41,
             "accounts_engaged": 26,
             "profile_views": 28,
