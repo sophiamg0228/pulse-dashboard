@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-13T10:32:50.385Z",
+  "updated": "2026-11-13T18:22:38.598Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6297,
+        "followers": 6300,
         "media_count": 559,
         "views_30d": 29509,
-        "reach_28d": 4165,
+        "reach_28d": 4460,
         "interactions_30d": 236,
         "accounts_engaged_30d": 82,
         "profile_views_30d": 819,
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 13150,
-            "interactions": 148,
-            "accounts_engaged": 53,
-            "profile_views": 369,
-            "followers": 6297
+            "views": 13803,
+            "interactions": 150,
+            "accounts_engaged": 54,
+            "profile_views": 380,
+            "followers": 6300
           }
         }
       },
@@ -132,10 +132,10 @@
       "name": "Ridasa Constructora",
       "ig": {
         "username": "ridasaconstructora",
-        "followers": 1426,
+        "followers": 1425,
         "media_count": 693,
         "views_30d": 19466,
-        "reach_28d": 6311,
+        "reach_28d": 6350,
         "interactions_30d": 98,
         "accounts_engaged_30d": 55,
         "profile_views_30d": 78,
@@ -218,11 +218,11 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 9127,
+            "views": 9303,
             "interactions": 42,
             "accounts_engaged": 27,
             "profile_views": 30,
-            "followers": 1426
+            "followers": 1425
           }
         }
       },
