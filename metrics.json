@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-14T14:46:28.582Z",
+  "updated": "2026-11-14T19:42:25.807Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6306,
-        "media_count": 559,
+        "followers": 6307,
+        "media_count": 560,
         "views_30d": 29791,
-        "reach_28d": 4754,
+        "reach_28d": 4764,
         "interactions_30d": 237,
         "accounts_engaged_30d": 83,
         "profile_views_30d": 838,
@@ -16,10 +16,10 @@
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
             "type": "Video",
-            "likes": 31,
+            "likes": 32,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 31,
+            "total_interactions": 32,
             "timestamp": "2026-11-09T14:44:15+0000"
           },
           {
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 15178,
-            "interactions": 155,
+            "views": 15447,
+            "interactions": 160,
             "accounts_engaged": 58,
-            "profile_views": 419,
-            "followers": 6306
+            "profile_views": 425,
+            "followers": 6307
           }
         }
       },
@@ -133,9 +133,9 @@
       "ig": {
         "username": "ridasaconstructora",
         "followers": 1426,
-        "media_count": 693,
+        "media_count": 694,
         "views_30d": 18869,
-        "reach_28d": 6261,
+        "reach_28d": 6264,
         "interactions_30d": 95,
         "accounts_engaged_30d": 53,
         "profile_views_30d": 74,
@@ -148,15 +148,6 @@
             "video_views": 0,
             "total_interactions": 6,
             "timestamp": "2026-09-30T01:00:17+0000"
-          },
-          {
-            "caption": "📍 Alvarado, Tolima",
-            "type": "Video",
-            "likes": 5,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 5,
-            "timestamp": "2026-08-27T16:50:58+0000"
           },
           {
             "caption": "🚨 ¡ATENCIÓN! Esta promo no se repite: 600 m² por $45 MILLONES 🚨",
@@ -193,6 +184,15 @@
             "video_views": 0,
             "total_interactions": 4,
             "timestamp": "2026-09-04T15:00:11+0000"
+          },
+          {
+            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "type": "Video",
+            "likes": 4,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 4,
+            "timestamp": "2026-09-01T13:38:06+0000"
           }
         ],
         "monthly": {
@@ -218,10 +218,10 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 9573,
+            "views": 9711,
             "interactions": 43,
             "accounts_engaged": 27,
-            "profile_views": 31,
+            "profile_views": 32,
             "followers": 1426
           }
         }
