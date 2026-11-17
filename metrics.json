@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-16T23:12:03.559Z",
+  "updated": "2026-11-17T06:39:08.768Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6311,
+        "followers": 6312,
         "media_count": 560,
-        "views_30d": 29636,
-        "reach_28d": 4902,
+        "views_30d": 29719,
+        "reach_28d": 5188,
         "interactions_30d": 250,
-        "accounts_engaged_30d": 85,
-        "profile_views_30d": 830,
+        "accounts_engaged_30d": 86,
+        "profile_views_30d": 836,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 17694,
-            "interactions": 172,
-            "accounts_engaged": 60,
-            "profile_views": 475,
-            "followers": 6311
+            "views": 18256,
+            "interactions": 174,
+            "accounts_engaged": 62,
+            "profile_views": 486,
+            "followers": 6312
           }
         }
       },
@@ -134,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1426,
         "media_count": 695,
-        "views_30d": 18789,
-        "reach_28d": 6279,
-        "interactions_30d": 82,
-        "accounts_engaged_30d": 46,
-        "profile_views_30d": 67,
+        "views_30d": 18897,
+        "reach_28d": 6376,
+        "interactions_30d": 83,
+        "accounts_engaged_30d": 48,
+        "profile_views_30d": 68,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,10 +218,10 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 10858,
-            "interactions": 49,
-            "accounts_engaged": 30,
-            "profile_views": 34,
+            "views": 11193,
+            "interactions": 51,
+            "accounts_engaged": 32,
+            "profile_views": 35,
             "followers": 1426
           }
         }
