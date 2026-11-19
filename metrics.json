@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-18T22:50:49.117Z",
+  "updated": "2026-11-19T03:58:15.691Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6311,
+        "followers": 6309,
         "media_count": 561,
-        "views_30d": 30122,
-        "reach_28d": 4891,
-        "interactions_30d": 264,
+        "views_30d": 29867,
+        "reach_28d": 4902,
+        "interactions_30d": 265,
         "accounts_engaged_30d": 88,
-        "profile_views_30d": 852,
+        "profile_views_30d": 867,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 20020,
-            "interactions": 193,
+            "views": 20242,
+            "interactions": 194,
             "accounts_engaged": 67,
-            "profile_views": 542,
-            "followers": 6311
+            "profile_views": 552,
+            "followers": 6309
           }
         }
       },
@@ -134,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1426,
         "media_count": 696,
-        "views_30d": 19515,
-        "reach_28d": 6619,
-        "interactions_30d": 86,
-        "accounts_engaged_30d": 51,
-        "profile_views_30d": 72,
+        "views_30d": 19713,
+        "reach_28d": 6627,
+        "interactions_30d": 84,
+        "accounts_engaged_30d": 50,
+        "profile_views_30d": 73,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 13008,
+            "views": 13080,
             "interactions": 57,
             "accounts_engaged": 37,
             "profile_views": 44,
