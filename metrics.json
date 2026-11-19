@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T12:45:18.195Z",
+  "updated": "2026-11-19T21:11:12.279Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -91,10 +91,10 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 20343,
-            "interactions": 194,
+            "views": 20675,
+            "interactions": 195,
             "accounts_engaged": 67,
-            "profile_views": 556,
+            "profile_views": 565,
             "followers": 6310
           }
         }
@@ -132,10 +132,10 @@
       "name": "Ridasa Constructora",
       "ig": {
         "username": "ridasaconstructora",
-        "followers": 1426,
+        "followers": 1427,
         "media_count": 696,
         "views_30d": 19741,
-        "reach_28d": 6596,
+        "reach_28d": 6646,
         "interactions_30d": 84,
         "accounts_engaged_30d": 50,
         "profile_views_30d": 73,
@@ -218,11 +218,11 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 13189,
+            "views": 13398,
             "interactions": 57,
             "accounts_engaged": 37,
-            "profile_views": 44,
-            "followers": 1426
+            "profile_views": 46,
+            "followers": 1427
           }
         }
       },
