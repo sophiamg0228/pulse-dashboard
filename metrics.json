@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T02:50:15.499Z",
+  "updated": "2026-11-20T10:55:40.245Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,11 +7,11 @@
         "username": "odontoclave",
         "followers": 6310,
         "media_count": 561,
-        "views_30d": 28706,
-        "reach_28d": 4891,
-        "interactions_30d": 252,
+        "views_30d": 28847,
+        "reach_28d": 4859,
+        "interactions_30d": 251,
         "accounts_engaged_30d": 82,
-        "profile_views_30d": 840,
+        "profile_views_30d": 842,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
@@ -91,10 +91,10 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 20715,
-            "interactions": 196,
+            "views": 20856,
+            "interactions": 195,
             "accounts_engaged": 67,
-            "profile_views": 571,
+            "profile_views": 573,
             "followers": 6310
           }
         }
@@ -134,8 +134,8 @@
         "username": "ridasaconstructora",
         "followers": 1427,
         "media_count": 696,
-        "views_30d": 19237,
-        "reach_28d": 6655,
+        "views_30d": 19282,
+        "reach_28d": 6580,
         "interactions_30d": 81,
         "accounts_engaged_30d": 48,
         "profile_views_30d": 70,
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 13486,
+            "views": 13543,
             "interactions": 57,
             "accounts_engaged": 37,
             "profile_views": 46,
