@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-21T07:59:27.994Z",
+  "updated": "2026-11-21T16:04:04.098Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6311,
+        "followers": 6313,
         "media_count": 561,
         "views_30d": 28522,
-        "reach_28d": 4869,
+        "reach_28d": 4859,
         "interactions_30d": 249,
         "accounts_engaged_30d": 81,
         "profile_views_30d": 833,
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 21569,
+            "views": 21645,
             "interactions": 200,
             "accounts_engaged": 68,
-            "profile_views": 595,
-            "followers": 6311
+            "profile_views": 600,
+            "followers": 6313
           }
         }
       },
@@ -133,9 +133,9 @@
       "ig": {
         "username": "ridasaconstructora",
         "followers": 1426,
-        "media_count": 696,
+        "media_count": 697,
         "views_30d": 19248,
-        "reach_28d": 6681,
+        "reach_28d": 6593,
         "interactions_30d": 83,
         "accounts_engaged_30d": 50,
         "profile_views_30d": 67,
@@ -186,13 +186,13 @@
             "timestamp": "2026-09-04T15:00:11+0000"
           },
           {
-            "caption": "📍 Alvarado, Tolima — Molino Country Club",
+            "caption": "📍 Alvarado, Tolima — La Riviera",
             "type": "Video",
-            "likes": 4,
+            "likes": 3,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 4,
-            "timestamp": "2026-09-01T13:38:06+0000"
+            "total_interactions": 3,
+            "timestamp": "2026-11-07T15:01:07+0000"
           }
         ],
         "monthly": {
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 13917,
+            "views": 14011,
             "interactions": 60,
             "accounts_engaged": 39,
             "profile_views": 47,
