@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-23T19:51:31.450Z",
+  "updated": "2026-11-24T04:37:01.270Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6311,
+        "followers": 6312,
         "media_count": 561,
-        "views_30d": 28069,
-        "reach_28d": 4957,
-        "interactions_30d": 255,
-        "accounts_engaged_30d": 82,
-        "profile_views_30d": 824,
+        "views_30d": 28754,
+        "reach_28d": 5199,
+        "interactions_30d": 258,
+        "accounts_engaged_30d": 84,
+        "profile_views_30d": 830,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
@@ -91,11 +91,11 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 23058,
-            "interactions": 210,
-            "accounts_engaged": 70,
-            "profile_views": 650,
-            "followers": 6311
+            "views": 23547,
+            "interactions": 214,
+            "accounts_engaged": 71,
+            "profile_views": 655,
+            "followers": 6312
           }
         }
       },
@@ -134,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1426,
         "media_count": 697,
-        "views_30d": 19029,
-        "reach_28d": 6471,
-        "interactions_30d": 80,
-        "accounts_engaged_30d": 48,
-        "profile_views_30d": 66,
+        "views_30d": 19503,
+        "reach_28d": 6668,
+        "interactions_30d": 79,
+        "accounts_engaged_30d": 50,
+        "profile_views_30d": 68,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,16 +218,16 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 14998,
-            "interactions": 65,
-            "accounts_engaged": 42,
-            "profile_views": 51,
+            "views": 15818,
+            "interactions": 66,
+            "accounts_engaged": 44,
+            "profile_views": 53,
             "followers": 1426
           }
         }
       },
       "fb": {
-        "fans": 170,
+        "fans": 171,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
