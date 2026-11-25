@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-24T15:31:49.776Z",
+  "updated": "2026-11-25T00:21:19.667Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6308,
+        "followers": 6311,
         "media_count": 563,
-        "views_30d": 28864,
-        "reach_28d": 5282,
-        "interactions_30d": 259,
-        "accounts_engaged_30d": 85,
-        "profile_views_30d": 831,
+        "views_30d": 30497,
+        "reach_28d": 5515,
+        "interactions_30d": 288,
+        "accounts_engaged_30d": 90,
+        "profile_views_30d": 855,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
@@ -21,6 +21,15 @@
             "video_views": 0,
             "total_interactions": 32,
             "timestamp": "2026-11-09T14:44:15+0000"
+          },
+          {
+            "caption": "👶🦷 ¿Desde cuándo debe ir tu hijo al odontólogo?",
+            "type": "Video",
+            "likes": 18,
+            "comments": 0,
+            "video_views": 0,
+            "total_interactions": 18,
+            "timestamp": "2026-11-24T14:32:44+0000"
           },
           {
             "caption": "Black Week en Medellín: ¡inicia tu ortodoncia por solo $80.000! 🖤😁",
@@ -57,15 +66,6 @@
             "video_views": 0,
             "total_interactions": 7,
             "timestamp": "2026-11-10T15:00:12+0000"
-          },
-          {
-            "caption": "Este octubre tu sonrisa también puede brillar. ✨🦷",
-            "type": "Imagen",
-            "likes": 7,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 7,
-            "timestamp": "2026-10-01T19:41:58+0000"
           }
         ],
         "monthly": {
@@ -91,16 +91,16 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 24102,
-            "interactions": 219,
-            "accounts_engaged": 74,
-            "profile_views": 667,
-            "followers": 6308
+            "views": 25902,
+            "interactions": 246,
+            "accounts_engaged": 78,
+            "profile_views": 699,
+            "followers": 6311
           }
         }
       },
       "fb": {
-        "fans": 7159,
+        "fans": 7158,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
@@ -134,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1425,
         "media_count": 697,
-        "views_30d": 19531,
-        "reach_28d": 6516,
-        "interactions_30d": 79,
-        "accounts_engaged_30d": 50,
-        "profile_views_30d": 68,
+        "views_30d": 19586,
+        "reach_28d": 6620,
+        "interactions_30d": 82,
+        "accounts_engaged_30d": 52,
+        "profile_views_30d": 66,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,16 +218,16 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 16033,
-            "interactions": 68,
-            "accounts_engaged": 45,
+            "views": 16491,
+            "interactions": 69,
+            "accounts_engaged": 46,
             "profile_views": 53,
             "followers": 1425
           }
         }
       },
       "fb": {
-        "fans": 171,
+        "fans": 170,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
