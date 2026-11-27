@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-26T20:56:47.441Z",
+  "updated": "2026-11-27T03:32:30.680Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
       "ig": {
         "username": "odontoclave",
-        "followers": 6304,
+        "followers": 6305,
         "media_count": 564,
-        "views_30d": 31567,
-        "reach_28d": 5715,
-        "interactions_30d": 287,
-        "accounts_engaged_30d": 95,
-        "profile_views_30d": 865,
+        "views_30d": 32031,
+        "reach_28d": 5835,
+        "interactions_30d": 295,
+        "accounts_engaged_30d": 93,
+        "profile_views_30d": 873,
         "top_posts": [
           {
             "caption": "🖤💙 ¡Llegó el Black Week a Odontoclave!",
@@ -41,6 +41,15 @@
             "timestamp": "2026-11-10T22:56:38+0000"
           },
           {
+            "caption": "💙 ¿Ya conoces al equipo que cuida tu sonrisa en la sede Puntoclave?",
+            "type": "Video",
+            "likes": 15,
+            "comments": 1,
+            "video_views": 0,
+            "total_interactions": 16,
+            "timestamp": "2026-11-26T16:02:40+0000"
+          },
+          {
             "caption": "Octubre está terminando. ¿Ya agendaste tu cita? 🦷📅",
             "type": "Imagen",
             "likes": 15,
@@ -57,15 +66,6 @@
             "video_views": 0,
             "total_interactions": 11,
             "timestamp": "2026-10-20T15:00:10+0000"
-          },
-          {
-            "caption": "💙 ¿Ya conoces al equipo que cuida tu sonrisa en la sede Puntoclave?",
-            "type": "Video",
-            "likes": 8,
-            "comments": 0,
-            "video_views": 0,
-            "total_interactions": 8,
-            "timestamp": "2026-11-26T16:02:40+0000"
           }
         ],
         "monthly": {
@@ -91,16 +91,16 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 28712,
-            "interactions": 268,
-            "accounts_engaged": 85,
-            "profile_views": 764,
-            "followers": 6304
+            "views": 29478,
+            "interactions": 280,
+            "accounts_engaged": 90,
+            "profile_views": 781,
+            "followers": 6305
           }
         }
       },
       "fb": {
-        "fans": 7160,
+        "fans": 7159,
         "impressions_30d": 0,
         "reach_30d": 0,
         "engagements_30d": 0,
@@ -134,11 +134,11 @@
         "username": "ridasaconstructora",
         "followers": 1427,
         "media_count": 697,
-        "views_30d": 19556,
-        "reach_28d": 6542,
-        "interactions_30d": 83,
-        "accounts_engaged_30d": 54,
-        "profile_views_30d": 65,
+        "views_30d": 19171,
+        "reach_28d": 6561,
+        "interactions_30d": 82,
+        "accounts_engaged_30d": 53,
+        "profile_views_30d": 62,
         "top_posts": [
           {
             "caption": "📍 Alvarado, Tolima — Molino Country Club",
@@ -218,7 +218,7 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 17144,
+            "views": 17235,
             "interactions": 71,
             "accounts_engaged": 48,
             "profile_views": 56,
