@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T13:29:36.907Z",
+  "updated": "2026-11-27T22:29:32.937Z",
   "clients": {
     "odontoclave": {
       "name": "Odontoclave",
@@ -7,8 +7,8 @@
         "username": "odontoclave",
         "followers": 6305,
         "media_count": 564,
-        "views_30d": 32236,
-        "reach_28d": 5836,
+        "views_30d": 32239,
+        "reach_28d": 5886,
         "interactions_30d": 295,
         "accounts_engaged_30d": 93,
         "profile_views_30d": 880,
@@ -25,11 +25,20 @@
           {
             "caption": "👶🦷 ¿Desde cuándo debe ir tu hijo al odontólogo?",
             "type": "Video",
-            "likes": 19,
+            "likes": 21,
             "comments": 0,
             "video_views": 0,
-            "total_interactions": 19,
+            "total_interactions": 21,
             "timestamp": "2026-11-24T14:32:44+0000"
+          },
+          {
+            "caption": "💙 ¿Ya conoces al equipo que cuida tu sonrisa en la sede Puntoclave?",
+            "type": "Video",
+            "likes": 16,
+            "comments": 1,
+            "video_views": 0,
+            "total_interactions": 17,
+            "timestamp": "2026-11-26T16:02:40+0000"
           },
           {
             "caption": "Black Week en Medellín: ¡inicia tu ortodoncia por solo $80.000! 🖤😁",
@@ -39,15 +48,6 @@
             "video_views": 0,
             "total_interactions": 17,
             "timestamp": "2026-11-10T22:56:38+0000"
-          },
-          {
-            "caption": "💙 ¿Ya conoces al equipo que cuida tu sonrisa en la sede Puntoclave?",
-            "type": "Video",
-            "likes": 15,
-            "comments": 1,
-            "video_views": 0,
-            "total_interactions": 16,
-            "timestamp": "2026-11-26T16:02:40+0000"
           },
           {
             "caption": "Octubre está terminando. ¿Ya agendaste tu cita? 🦷📅",
@@ -91,10 +91,10 @@
             "followers": 6297
           },
           "2026-11": {
-            "views": 29821,
-            "interactions": 280,
+            "views": 30418,
+            "interactions": 285,
             "accounts_engaged": 90,
-            "profile_views": 793,
+            "profile_views": 809,
             "followers": 6305
           }
         }
@@ -135,7 +135,7 @@
         "followers": 1427,
         "media_count": 697,
         "views_30d": 19184,
-        "reach_28d": 6483,
+        "reach_28d": 6520,
         "interactions_30d": 83,
         "accounts_engaged_30d": 53,
         "profile_views_30d": 62,
@@ -218,9 +218,9 @@
             "followers": 1419
           },
           "2026-11": {
-            "views": 17281,
-            "interactions": 72,
-            "accounts_engaged": 48,
+            "views": 17471,
+            "interactions": 74,
+            "accounts_engaged": 49,
             "profile_views": 56,
             "followers": 1427
           }
